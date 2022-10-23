@@ -1,0 +1,119 @@
+@use '../abstracts' as *;
+
+////nav 
+nav { 
+    display: flex;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0; 
+    z-index: 200;
+
+    ul { 
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+
+        li { 
+        
+        }
+       
+    }
+
+}
+//END OF NAV////////////////
+
+
+
+
+
+///HERO//////////////
+#contact-hero{ 
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    border: 2px black solid;
+    border-bottom-left-radius: 90%;
+    border-bottom-right-radius: 90%;
+
+    h1 { 
+        font-size: 32px;
+    }
+    
+    #arrow-container { 
+        display: flex;
+        justify-content: center;
+       
+        svg { 
+
+            fill: black; 
+            
+            &:hover { 
+                fill: $softblue; 
+                transform: scale(2) translateY(5px);
+                transition-duration: 800ms;
+                
+            }
+
+        }
+    }
+}
+
+//END OF HERO/////////////
+
+
+///CONTACT FORM//////////////
+
+
+
+#form-container { 
+    padding: 5em; 
+    display: flex;
+    justify-content: center;
+    
+ 
+
+    #personal-contact { 
+        display: flex; 
+      flex-direction: column;
+        justify-content: start;
+        gap: .5em;
+
+    }
+    
+
+    .input-group { 
+
+        padding: 1em; 
+ 
+    }
+
+    .input-text { 
+        width: 100%;
+        padding: .5em; 
+    }
+
+    #submit-container { 
+        display: flex;
+        justify-content: center; 
+    
+
+    #submit { 
+        cursor: pointer;
+        width: 75%;
+        height: 4em;
+        border-radius: 10%;
+        text-align: center;
+        color: white;
+        background-color: $color-font-primary; 
+
+        &:hover { 
+            color: $charcoal-gray; 
+            background-color: $softblue;
+        } 
+    }
+    }
+
+}

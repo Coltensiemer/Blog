@@ -1,0 +1,123 @@
+//ABREACTS /////////////////
+@use '../abstracts' as *;
+
+
+///BODY////
+body { 
+
+margin: 0;
+padding: 0; 
+background-color: $softblue;
+} 
+//HEADER/////////////////////
+header { 
+    border-bottom: 1em white solid;
+    
+
+}
+
+
+///NAVBAR/////////////////////
+nav { 
+    display: flex;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0; 
+    z-index: 200;
+
+    ul { 
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+
+        li { 
+         color: $charcoal-gray;
+        }
+       
+    }
+
+}
+
+
+//TITLE FOR ARTICLE/////////////////
+
+#title { 
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    z-index: 0;
+    color: $charcoal-gray;
+    background-color: white;
+    box-shadow: $inverse-boxshadow; 
+    margin: 10%;
+    overflow: scroll;
+
+    P { 
+        margin: 10%;
+    }
+
+}
+
+    #continue-reading { 
+        width: 20%;
+       margin-left: 40%;
+       border-radius: 20%;
+    }
+
+
+
+
+//ARTICLE/////////////////////////////
+main { 
+    background-color: white; 
+    box-shadow: $inverse-boxshadow;
+    margin: 10%;
+    padding: 2em; 
+
+}
+
+
+// TOGGLE FOR LIGHT DARK/////////////
+
+#light-dark-toggle { 
+        cursor: pointer;
+        border: none;
+        background-color: white;
+}
+
+
+footer
+
+{ 
+    display: flex;
+    justify-content: space-evenly; 
+    text-align: center;
+    width: 100%; 
+    background-color: black;
+    color: white;
+    padding: 2em; 
+    list-style: none;
+
+    nav { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    ul { 
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        gap: 2em; 
+
+    }
+
+
+}
+
+
+
