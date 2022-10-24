@@ -1,26 +1,8 @@
 @use '../abstracts' as *;
 
-////nav 
-nav { 
-    display: flex;
-    justify-content: space-evenly;
-    position: sticky;
-    top: 0; 
-    z-index: 200;
+@import '../components/standardheader'; 
 
-    ul { 
-        display: flex;
-        flex-direction: row;
-        gap: 2em;
 
-        li { 
-        
-        }
-       
-    }
-
-}
-//END OF NAV////////////////
 
 
 

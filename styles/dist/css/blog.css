@@ -22,7 +22,7 @@ nav ul {
   gap: 2em;
 }
 nav ul li {
-  color: #333333;
+  color: #40434E;
 }
 
 #title {
@@ -34,7 +34,7 @@ nav ul li {
   text-align: center;
   height: 100vh;
   z-index: 0;
-  color: #333333;
+  color: #40434E;
   background-color: white;
   box-shadow: 0px 16px 25px 0px rgba(0, 0, 0, 0.75) inset;
   margin: 10%;
@@ -68,7 +68,7 @@ footer {
   justify-content: space-evenly;
   text-align: center;
   width: 100%;
-  background-color: black;
+  background-color: gray;
   color: white;
   padding: 2em;
   list-style: none;

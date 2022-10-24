@@ -1,16 +1,26 @@
-nav {
+footer {
   display: flex;
   justify-content: space-evenly;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 200;
+  text-align: center;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  padding: 2em;
+  list-style: none;
 }
-nav ul {
+footer nav {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
   gap: 2em;
 }
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  gap: 2em;
+}
+
 #contact-hero {
   padding-top: 5em;
   display: flex;
@@ -70,6 +80,6 @@ nav ul {
   background-color: wheat;
 }
 #form-container #submit-container #submit:hover {
-  color: #333333;
+  color: #40434E;
   background-color: #6CE1F2;
 }/*# sourceMappingURL=contact.css.map */
