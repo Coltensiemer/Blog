@@ -1,0 +1,7 @@
+DELETE TASK ONCE COMPLETE 
+
+
+For Home: 
+    1. Create nav bar from hamburger 
+    2. cool double layer border that will be used as design 
+    3. Put keyframes into Sass 
