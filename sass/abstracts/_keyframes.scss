@@ -1,0 +1,31 @@
+
+
+@mixin star-one{
+@keyframes shooting-star-1 { 
+    from { 
+        transform: translateX(-100%) translateY(-10%);
+      
+        
+
+    }
+    to { 
+        transform: translateX(300em) translateY(50em)
+    }
+} 
+} 
+
+
+@mixin keyframes($shooting-star-1) {
+@keyframes #{$shooting-star-2} { 
+    from { 
+        transform: translateX(-100%);
+        border-bottom: 2px white solid; 
+    }
+
+    to { 
+        transform: translateX(0);
+        border-bottom: 2px $softblue solid;
+        
+    }
+}
+} 
