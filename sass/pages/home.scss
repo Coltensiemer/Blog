@@ -15,35 +15,26 @@ body {
     height: 100vh;
     background-color: $softblue;
     
-   
-    
 }
 
-#welcome-section { 
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: $burntsienna;
-    border-bottom-left-radius: 30%;
-    padding-bottom: 4em;
-    
-}
+
+
 
 // NAV BAR -----> 
 
 #navbar{ 
     display: flex;
-
+    position: absolute;
+    top: 200px;
     justify-content: center;
-
     font-size: 18px;
     padding: 10px;
     background-color: $color-font-primary;
-    z-index: 999;
-    position: absolute; 
+    z-index: 100;
     width: 100%;
+    height: auto;
     display: none;
+    
     
    
 
@@ -56,14 +47,11 @@ body {
         text-shadow: 3px -1px 2px rgba(0,0,0,0.6);
 
         li { 
-
-
         
         &:hover { 
             cursor: pointer;
             color: $burntsienna;
-            transform: scale(1.1);
-            transition-duration: 400ms;
+           @include growInScale(scale(1.5), 800ms)
             
         }
 
@@ -71,58 +59,53 @@ body {
 
     }
 
-
-  
-
 }
 
-#bottom-border { 
-    position: relative;
+
+
+
+//END OF NAVBAR 
+
+
+
+
+
+//NAME CONTAINER 
+
+main { 
     width: 100%;
-    z-index: 100;
-    font-size: 12px;
-    color: $burntsienna; 
-    border-bottom: 2px $softblue solid;
-animation:   shooting-star-2 5s;
-
-}
-
-
-
-
-
+    height: auto;
+    background-color: $burntsienna;
 
 
 
 #name-container { 
 
+    background-color: $softblue;
     color: $color-font-primary;
     text-shadow: -3px 1px 2px rgba(102,204,238,0.6);
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding-left: 4em; 
+    padding-top: 5em;
    
   
-    
-
-}
-
-
-
-//NAME---------->> 
-h1 {
+.name{
 
     font-size: 48px;
     letter-spacing: .25em;
     text-shadow: -3px -1px 2px rgba(0,0,0,0.6);
 
+    &:hover { 
+        cursor: pointer;
+        @include growInScale(scale(1.1), 200ms)
+    }
+
    
 
     span{ 
         font-size: 72px;
-        @include growInScale(scale(1.1))
        
     }
  }
@@ -135,18 +118,69 @@ h1 {
     li { 
         
         list-style: none;
-       
-
         
     }
 
+} 
+
+
+.Profession { 
+    
+    background-color: $burntsienna;
+    padding: 75px; 
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    font-size: 2rem;
+}
+
+} 
+
+} 
+// About me  
+#about-me { 
+    padding: 10%;
+    display: flex;
+  flex-direction: column;
+    
+  div{ 
+    display: flex;
+  }
+
+    #image-container { 
+        
+        border: 2px black solid;
+        height: 150px;
+        width: 150px;
+      
+        
+        img{ 
+
+        }
+    }
 
 }
 
-p { 
-    padding-left: 2em;
-    font-size: 32px;
+#works { 
+    padding: 10%;
+    
+#project-container { 
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 200px;
+    
+    div { 
+        border: 2px black solid; 
+        width: 100px;
+        height: 100px;
+    }
 }
+}
+
+
+
+
 
 
 
@@ -199,6 +233,12 @@ p {
 }
 
 
+
+.spacer { 
+    background-color: $softblue;
+    width: 100%;
+    height: .25em;
+}
 
 
 
