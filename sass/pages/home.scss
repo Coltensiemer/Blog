@@ -26,27 +26,27 @@ body {
     display: flex;
     position: absolute;
     top: 200px;
-    justify-content: center;
+    justify-content: space-around;
     font-size: 18px;
-    padding: 10px;
     background-color: $color-font-primary;
-    z-index: 100;
     width: 100%;
-    height: auto;
-    display: none;
+
     
     
    
 
-    ul { 
+    .navbar-children { 
         display: flex;
         flex-direction: column;
-        font-size: 50px;
+        justify-content: start;
         list-style: none;
         color: $softblue;
         text-shadow: 3px -1px 2px rgba(0,0,0,0.6);
-
+        gap: 1em;
+       
+        
         li { 
+            flex-wrap: wrap;
         
         &:hover { 
             cursor: pointer;
@@ -57,6 +57,16 @@ body {
 
     }
 
+    }
+
+    #navbar-contact { 
+        background-color: $burntsienna;
+        padding: 1em;
+
+        li { 
+            list-style: none;
+        }
+        
     }
 
 }
@@ -144,22 +154,27 @@ main {
   flex-direction: column;
     
   div{ 
-    display: flex;
   }
 
     #image-container { 
-        
+        float: left;
         border: 2px black solid;
-        height: 150px;
-        width: 150px;
+        background-color: $softblue;
+        border-radius: 50%;
+        width: 200px;
       
         
         img{ 
+           border-image: fill;
 
         }
     }
 
 }
+
+
+
+// START OF WORKS 
 
 #works { 
     padding: 10%;
@@ -168,17 +183,57 @@ main {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    height: 200px;
+    height: 400px;
     
     div { 
+        background-color: $softblue;
         border: 2px black solid; 
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
     }
 }
 }
 
 
+// END OF WORKS 
+
+// Start of Contact me
+
+#contact-me { 
+    
+    display: flex;
+    padding: 10%;
+
+    #personal-contact { 
+        
+
+    }
+
+    #social-media-welcome { 
+        display: flex;
+
+        li { 
+            list-style: none;
+
+        }
+    }
+
+
+    form { 
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        background-color: $softblue;
+        padding: 1em;
+
+    }
+
+}
+
+
+
+
+// End of Contact me
 
 
 
@@ -238,6 +293,13 @@ main {
     background-color: $softblue;
     width: 100%;
     height: .25em;
+
+    ::before { 
+        content: "";
+        color: yellow;
+        width: 100%;
+        height: .5em;
+    }
 }
 
 

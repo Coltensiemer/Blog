@@ -8,27 +8,34 @@ body {
   display: flex;
   position: absolute;
   top: 200px;
-  justify-content: center;
+  justify-content: space-around;
   font-size: 18px;
-  padding: 10px;
   background-color: wheat;
-  z-index: 100;
   width: 100%;
-  height: auto;
-  display: none;
 }
-#navbar ul {
+#navbar .navbar-children {
   display: flex;
   flex-direction: column;
-  font-size: 50px;
+  justify-content: start;
   list-style: none;
   color: #6CE1F2;
   text-shadow: 3px -1px 2px rgba(0, 0, 0, 0.6);
+  gap: 1em;
 }
-#navbar ul li:hover {
+#navbar .navbar-children li {
+  flex-wrap: wrap;
+}
+#navbar .navbar-children li:hover {
   cursor: pointer;
   color: #e66b4c;
   -webkit-transform: scale(1.5), 800ms;
+}
+#navbar #navbar-contact {
+  background-color: #e66b4c;
+  padding: 1em;
+}
+#navbar #navbar-contact li {
+  list-style: none;
 }
 
 main {
@@ -79,14 +86,18 @@ main #name-container .Profession {
   display: flex;
   flex-direction: column;
 }
-#about-me div {
-  display: flex;
-}
 #about-me #image-container {
+  float: left;
   border: 2px black solid;
-  height: 150px;
-  width: 150px;
+  background-color: #6CE1F2;
+  border-radius: 50%;
+  width: 200px;
 }
+#about-me #image-container img {
+  -o-border-image: fill;
+     border-image: fill;
+}
+
 #works {
   padding: 10%;
 }
@@ -94,12 +105,31 @@ main #name-container .Profession {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  height: 200px;
+  height: 400px;
 }
 #works #project-container div {
+  background-color: #6CE1F2;
   border: 2px black solid;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
+}
+
+#contact-me {
+  display: flex;
+  padding: 10%;
+}
+#contact-me #social-media-welcome {
+  display: flex;
+}
+#contact-me #social-media-welcome li {
+  list-style: none;
+}
+#contact-me form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: #6CE1F2;
+  padding: 1em;
 }
 
 .stars {
@@ -150,4 +180,10 @@ main #name-container .Profession {
   background-color: #6CE1F2;
   width: 100%;
   height: 0.25em;
+}
+.spacer ::before {
+  content: "";
+  color: yellow;
+  width: 100%;
+  height: 0.5em;
 }/*# sourceMappingURL=home.css.map */
