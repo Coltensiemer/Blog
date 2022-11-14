@@ -23,13 +23,13 @@ body {
 // NAV BAR -----> 
 
 #navbar{ 
-    display: flex;
-    position: absolute;
+  
     top: 200px;
     justify-content: space-around;
     font-size: 18px;
     background-color: $color-font-primary;
     width: 100%;
+
 
     
     
@@ -51,7 +51,6 @@ body {
         &:hover { 
             cursor: pointer;
             color: $burntsienna;
-           @include growInScale(scale(1.5), 800ms)
             
         }
 
@@ -92,13 +91,23 @@ main {
 #name-container { 
 
     background-color: $softblue;
-    color: $color-font-primary;
+
     text-shadow: -3px 1px 2px rgba(102,204,238,0.6);
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     padding-top: 5em;
+
+
+    #intro-container { 
+        margin: 10%;
+        display: flex;
+    h2 { 
+        align-self: flex-start;
+    
+    }
+
    
   
 .name{
@@ -107,42 +116,50 @@ main {
     letter-spacing: .25em;
     text-shadow: -3px -1px 2px rgba(0,0,0,0.6);
 
-    &:hover { 
-        cursor: pointer;
-        @include growInScale(scale(1.1), 200ms)
-    }
 
    
 
     span{ 
         font-size: 72px;
        
+
     }
- }
-
-
-#social-media-welcome { 
-    display: flex;
-    gap: 4em;
-
-    li { 
-        
-        list-style: none;
-        
-    }
-
 } 
 
 
-.Profession { 
-    
+
+
+
+    } 
+
+    button{ 
+        background-color: $burntsienna;
+        width: 150px;
+        height: 50px;
+        justify-self: flex-start;
+        align-self: center; 
+
+        &:hover { 
+            background-color: white;
+        }
+
+    }
+
+#profession-container {
+
     background-color: $burntsienna;
-    padding: 75px; 
-    width: 75px;
-    height: 75px;
     border-radius: 50%;
-    font-size: 2rem;
+    margin-left: 50%;
+    margin-bottom: -20px;
+    width: 250px;
+    height: 250px;
+
+
+
+.profession { 
+   font-size: 48px;
 }
+} 
 
 } 
 
@@ -152,22 +169,48 @@ main {
     padding: 10%;
     display: flex;
   flex-direction: column;
-    
-  div{ 
-  }
+
+  #about-me-container {
+display: flex;
+justify-content: center;
+align-items: center;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: $softblue;
+    margin-top: -100PX;
+
+    h1 { 
+
+        border: 2px black solid;
+    }
+  } 
+
+
+  
 
     #image-container { 
         float: left;
-        border: 2px black solid;
-        background-color: $softblue;
-        border-radius: 50%;
-        width: 200px;
-      
+        padding: .25em;
+
+       
         
         img{ 
-           border-image: fill;
+            border: 2px black solid;
+            background-color: $softblue;
+            border-radius: 20% 20%; 
+    
+        
 
         }
+    }
+
+    p { 
+       padding: 20px 10px 20px 10px; 
+        background-color: rgb(87, 86, 86); 
+        color: whitesmoke;
+      border-top-left-radius: 40%;
+
     }
 
 }
@@ -200,33 +243,61 @@ main {
 // Start of Contact me
 
 #contact-me { 
-    
+    background-color:rgb(87, 86, 86);
     display: flex;
-    padding: 10%;
+    
+    gap: 2em;
+
 
     #personal-contact { 
+       
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+
+       
+
+
+        #p-container { 
+
+            display: flex;
+            align-items: center;
+            
+        
+            background-color: $softblue;
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            flex-wrap: nowrap;
+
+            h1{ 
+                margin: 10%;
+            }
+        }
         
 
     }
 
-    #social-media-welcome { 
+    #contact-info-container { 
         display: flex;
+        flex-direction: column;
+    
+
+    #social-media { 
+        display: flex;
+
+
 
         li { 
             list-style: none;
 
         }
+    } 
+
+
     }
 
-
-    form { 
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-        background-color: $softblue;
-        padding: 1em;
-
-    }
 
 }
 
@@ -281,12 +352,21 @@ main {
     left: -10px; 
     color: white; 
     font-size: 10px; 
-
+    
 
     animation: shooting-star-1 5s infinite;
     animation-delay: 8s; 
 }
 
+
+.small-circle { 
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    opacity: 75%;
+    background-color: slategrey;
+    z-index: 1;
+}
 
 
 .spacer { 
