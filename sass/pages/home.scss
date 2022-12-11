@@ -5,388 +5,44 @@
 
 
 
-* { 
-
-    // border: .5px solid;
-}
-
-body { 
-    margin: 0;
-    height: 100vh;
-    background-color: $softblue;
-    
-}
-
-
-
-
-// NAV BAR -----> 
-
-#navbar{ 
-  
-    top: 200px;
-    justify-content: space-around;
-    font-size: 18px;
-    background-color: $color-font-primary;
-    width: 100%;
-
-
-    
-    
-   
-
-    .navbar-children { 
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        list-style: none;
-        color: $softblue;
-        text-shadow: 3px -1px 2px rgba(0,0,0,0.6);
-        gap: 1em;
-       
-        
-        li { 
-            flex-wrap: wrap;
-        
-        &:hover { 
-            cursor: pointer;
-            color: $burntsienna;
-            
-        }
-
-    }
-
-    }
-
-    #navbar-contact { 
-        background-color: $burntsienna;
-        padding: 1em;
-
-        li { 
-            list-style: none;
-        }
-        
-    }
-
-}
-
-
-
-
-//END OF NAVBAR 
-
-
-
-
-
-//NAME CONTAINER 
-
+// GLOBAL========
 main { 
-    width: 100%;
-    height: auto;
-    background-color: $burntsienna;
+    margin: 0;
+    padding: 0;
 
-
-
-#name-container { 
-
-    background-color: $softblue;
-
-    text-shadow: -3px 1px 2px rgba(102,204,238,0.6);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding-top: 5em;
-
-
-    #intro-container { 
-        margin: 10%;
-        display: flex;
-    h2 { 
-        align-self: flex-start;
-    
-    }
-
-   
-  
-.name{
-
-    font-size: 48px;
-    letter-spacing: .25em;
-    text-shadow: -3px -1px 2px rgba(0,0,0,0.6);
-
-
-   
-
-    span{ 
-        font-size: 72px;
-       
-
-    }
-} 
-
-
-
-
-
-    } 
-
-    button{ 
-        background-color: $burntsienna;
-        width: 150px;
-        height: 50px;
-        justify-self: flex-start;
-        align-self: center; 
-
-        &:hover { 
-            
-            background-color: white;
-        }
-
-    }
-
-#profession-container {
-
-    background-color: $burntsienna;
-    border-radius: 50%;
-    margin-left: 50%;
-    margin-bottom: -20px;
-    width: 250px;
-    height: 250px;
-
-
-
-.profession { 
-   font-size: 48px;
 }
-} 
-
-} 
-
-} 
 
 
+// HERO START =============
+#hero { 
+    @include flex-column-center;
+    background-color: $primary-one;
 
-
-// About me  
-#about-me { 
-    padding: 10%;
-    display: flex;
-  flex-direction: column;
-
-  #about-me-container {
-display: flex;
-justify-content: center;
-align-items: center;
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    background-color: $softblue;
-    margin-top: -100PX;
-
-    h1 { 
-
-        border: 2px black solid;
-    }
-  } 
-
-
-  
-
-    #image-container { 
-        float: left;
-        padding: .25em;
-
+    #logomenu-container { 
+       @include flex-row-space-between; 
+       color: $primary-white-type;
        
-        
-        img{ 
-            border: 2px black solid;
-            background-color: $softblue;
-            border-radius: 20% 20%; 
-    
-        
+    }
 
-        }
+    #hero-name { 
+    color: $primary-white-type;
+     align-self: center;
+
+       img { 
+        float: right;
+       }
     }
 
     p { 
-       padding: 20px 10px 20px 10px; 
-        background-color: rgb(87, 86, 86); 
-        color: whitesmoke;
-      border-top-left-radius: 40%;
-
-    }
-
-}
-
-
-
-// START OF WORKS 
-
-#works { 
-    padding: 10%;
-    
-#project-container { 
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 400px;
-    
-    div { 
-        background-color: $softblue;
-        border: 2px black solid; 
-        width: 200px;
-        height: 200px;
-    }
-}
-}
-
-
-// END OF WORKS 
-
-// Start of Contact me
-
-#contact-me { 
-    background-color:rgb(87, 86, 86);
-    display: flex;
-    
-    gap: 2em;
-
-
-    #personal-contact { 
+        font-size: 32px;
+        color: rgba(201, 135, 8, 0.5);
        
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        
-
-       
-
-
-        #p-container { 
-
-            display: flex;
-            align-items: center;
-            
-        
-            background-color: $softblue;
-            height: 250px;
-            width: 250px;
-            border-radius: 50%;
-            flex-wrap: nowrap;
-
-            h1{ 
-                margin: 10%;
-            }
-        }
-        
-
     }
 
-    #contact-info-container { 
-        display: flex;
-        flex-direction: column;
-    
 
-    #social-media { 
-        display: flex;
-
-
-
-        li { 
-            list-style: none;
-
-        }
+    button { 
+      @include primary-button; 
     } 
 
 
-    }
-
-
 }
-
-
-
-
-// End of Contact me
-
-
-
-
-
-
-// BACKGROUND IMAGE 
-
-.stars { 
-
-    background: transparent url('/images/stars_bg.png');
-    display: inline;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-
-}
-
-
-#shooting-star-1 { 
-    position: absolute;
-    top: 20px; 
-    left: -10px; 
-    color: white; 
-    font-size: 10px; 
-
-
-    animation: shooting-star-1 5s infinite;
-    animation-delay: 6s; 
-}
-#shooting-star-2 { 
-    position: absolute;
-    top: 200px; 
-    left: -10px; 
-    color: white; 
-    font-size: 10px; 
-
-
-    animation: shooting-star-1 5s infinite;
-    animation-delay: 7s; 
-}
-#shooting-star-3 { 
-    position: absolute;
-    top: -50px; 
-    left: -10px; 
-    color: white; 
-    font-size: 10px; 
-    
-
-    animation: shooting-star-1 5s infinite;
-    animation-delay: 8s; 
-}
-
-
-.small-circle { 
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    opacity: 75%;
-    background-color: slategrey;
-    z-index: 1;
-}
-
-
-.spacer { 
-    background-color: $softblue;
-    width: 100%;
-    height: .25em;
-
-    ::before { 
-        content: "";
-        color: yellow;
-        width: 100%;
-        height: .5em;
-    }
-}
-
-
-
-

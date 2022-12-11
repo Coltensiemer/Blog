@@ -1,6 +1,33 @@
-@mixin growInScale($args...) { 
-  -webkit-transform: $args;
+
+@use '../abstracts/colors';
+
+// FLEX MIXINS ========
+@mixin  flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+@mixin flex-row-space-between { 
+    display: flex;
+    justify-content: space-between;
 }
 
 
-// ADD SPACER 
+
+
+
+
+//BUTTON 
+
+@mixin primary-button {
+    width: 140px;
+    height: 50px; 
+    padding: .5em; 
+    border-radius: 20px;
+    background-color: #4E4D4D;
+    color: white; 
+    
+}

@@ -1,235 +1,36 @@
-body {
-  margin: 0;
-  height: 100vh;
-  background-color: #6CE1F2;
-}
-
-#navbar {
-  top: 200px;
-  justify-content: space-around;
-  font-size: 18px;
-  background-color: wheat;
-  width: 100%;
-}
-#navbar .navbar-children {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  list-style: none;
-  color: #6CE1F2;
-  text-shadow: 3px -1px 2px rgba(0, 0, 0, 0.6);
-  gap: 1em;
-}
-#navbar .navbar-children li {
-  flex-wrap: wrap;
-}
-#navbar .navbar-children li:hover {
-  cursor: pointer;
-  color: #e66b4c;
-}
-#navbar #navbar-contact {
-  background-color: #e66b4c;
-  padding: 1em;
-}
-#navbar #navbar-contact li {
-  list-style: none;
-}
-
 main {
-  width: 100%;
-  height: auto;
-  background-color: #e66b4c;
+  margin: 0;
+  padding: 0;
 }
-main #name-container {
-  background-color: #6CE1F2;
-  text-shadow: -3px 1px 2px rgba(102, 204, 238, 0.6);
+
+#hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding-top: 5em;
+  background-color: #03666C;
 }
-main #name-container #intro-container {
-  margin: 10%;
+#hero #logomenu-container {
   display: flex;
+  justify-content: space-between;
+  color: white;
 }
-main #name-container #intro-container h2 {
-  align-self: flex-start;
-}
-main #name-container #intro-container .name {
-  font-size: 48px;
-  letter-spacing: 0.25em;
-  text-shadow: -3px -1px 2px rgba(0, 0, 0, 0.6);
-}
-main #name-container #intro-container .name span {
-  font-size: 72px;
-}
-main #name-container button {
-  background-color: #e66b4c;
-  width: 150px;
-  height: 50px;
-  justify-self: flex-start;
+#hero #hero-name {
+  color: white;
   align-self: center;
 }
-main #name-container button:hover {
-  background-color: white;
+#hero #hero-name img {
+  float: right;
 }
-main #name-container #profession-container {
-  background-color: #e66b4c;
-  border-radius: 50%;
-  margin-left: 50%;
-  margin-bottom: -20px;
-  width: 250px;
-  height: 250px;
+#hero p {
+  font-size: 32px;
+  color: rgba(201, 135, 8, 0.5);
 }
-main #name-container #profession-container .profession {
-  font-size: 48px;
-}
-
-#about-me {
-  padding: 10%;
-  display: flex;
-  flex-direction: column;
-}
-#about-me #about-me-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
-  background-color: #6CE1F2;
-  margin-top: -100PX;
-}
-#about-me #about-me-container h1 {
-  border: 2px black solid;
-}
-#about-me #image-container {
-  float: left;
-  padding: 0.25em;
-}
-#about-me #image-container img {
-  border: 2px black solid;
-  background-color: #6CE1F2;
-  border-radius: 20% 20%;
-}
-#about-me p {
-  padding: 20px 10px 20px 10px;
-  background-color: rgb(87, 86, 86);
-  color: whitesmoke;
-  border-top-left-radius: 40%;
-}
-
-#works {
-  padding: 10%;
-}
-#works #project-container {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  height: 400px;
-}
-#works #project-container div {
-  background-color: #6CE1F2;
-  border: 2px black solid;
-  width: 200px;
-  height: 200px;
-}
-
-#contact-me {
-  background-color: rgb(87, 86, 86);
-  display: flex;
-  gap: 2em;
-}
-#contact-me #personal-contact {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-#contact-me #personal-contact #p-container {
-  display: flex;
-  align-items: center;
-  background-color: #6CE1F2;
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
-  flex-wrap: nowrap;
-}
-#contact-me #personal-contact #p-container h1 {
-  margin: 10%;
-}
-#contact-me #contact-info-container {
-  display: flex;
-  flex-direction: column;
-}
-#contact-me #contact-info-container #social-media {
-  display: flex;
-}
-#contact-me #contact-info-container #social-media li {
-  list-style: none;
-}
-
-.stars {
-  background: transparent url("/images/stars_bg.png");
-  display: inline;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-
-#shooting-star-1 {
-  position: absolute;
-  top: 20px;
-  left: -10px;
-  color: white;
-  font-size: 10px;
-  -webkit-animation: shooting-star-1 5s infinite;
-          animation: shooting-star-1 5s infinite;
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
-}
-
-#shooting-star-2 {
-  position: absolute;
-  top: 200px;
-  left: -10px;
-  color: white;
-  font-size: 10px;
-  -webkit-animation: shooting-star-1 5s infinite;
-          animation: shooting-star-1 5s infinite;
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
-}
-
-#shooting-star-3 {
-  position: absolute;
-  top: -50px;
-  left: -10px;
-  color: white;
-  font-size: 10px;
-  -webkit-animation: shooting-star-1 5s infinite;
-          animation: shooting-star-1 5s infinite;
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
-}
-
-.small-circle {
+#hero button {
+  width: 140px;
   height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  opacity: 75%;
-  background-color: slategrey;
-  z-index: 1;
-}
-
-.spacer {
-  background-color: #6CE1F2;
-  width: 100%;
-  height: 0.25em;
-}
-.spacer ::before {
-  content: "";
-  color: yellow;
-  width: 100%;
-  height: 0.5em;
+  padding: 0.5em;
+  border-radius: 20px;
+  background-color: #4E4D4D;
+  color: white;
 }/*# sourceMappingURL=home.css.map */
