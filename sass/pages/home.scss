@@ -27,9 +27,22 @@ main {
     #hero-name { 
     color: $primary-white-type;
      align-self: center;
+     font-size: 32px;
 
        img { 
         float: right;
+       }
+
+       .hello-span { 
+        font-size: 48px;
+        font-family: 'copperplate'; 
+
+        &:hover { 
+            color: $primary-second;
+        
+          
+
+        }
        }
     }
 
@@ -42,7 +55,12 @@ main {
 
     button { 
       @include primary-button; 
+     align-self: center;
+     margin: 2em;
+
     } 
 
 
+
 }
+// HERO END //////////////////
