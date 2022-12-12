@@ -60,7 +60,51 @@ main {
 
     } 
 
+    #next-section-container{
+
+        display: flex;
+        flex-direction: column;
+    
+        align-items: flex-end;
+        
 
 
+    h2 {
+       @include section-name-design; 
+       padding-right: 10px;
+       z-index: 1;
+
+       #down-arrow { 
+        width: 30px;
+        height: 30px;
+
+       }
+
+
+    } 
+} 
+
+
+
+#circle-container { 
+    background-color: $primary-second; 
+    height: 50px;
+    display: flex;
+    justify-content: end;
+   
+
+   
+  
+
+    #circle { 
+    position: relative;
+    top: -75px;
+    left:10px; 
+    fill: $primary-one;
+    }
+} 
+
+
+    
 }
 // HERO END //////////////////

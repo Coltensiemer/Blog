@@ -47,4 +47,31 @@ main {
   color: white;
   align-self: center;
   margin: 2em;
+}
+#hero #next-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#hero #next-section-container h2 {
+  color: #DEDEDE;
+  opacity: 50%;
+  padding-right: 10px;
+  z-index: 1;
+}
+#hero #next-section-container h2 #down-arrow {
+  width: 30px;
+  height: 30px;
+}
+#hero #circle-container {
+  background-color: #C98708;
+  height: 50px;
+  display: flex;
+  justify-content: end;
+}
+#hero #circle-container #circle {
+  position: relative;
+  top: -75px;
+  left: 10px;
+  fill: #03666C;
 }/*# sourceMappingURL=home.css.map */
