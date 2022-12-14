@@ -6,6 +6,10 @@
 
 
 // GLOBAL========
+
+* { 
+box-sizing: border-box;
+}
 main { 
     margin: 0;
     padding: 0;
@@ -61,13 +65,7 @@ main {
     } 
 
     #next-section-container{
-
-        display: flex;
-        flex-direction: column;
-    
-        align-items: flex-end;
-        
-
+        @include flex-colum-end; 
 
     h2 {
        @include section-name-design; 
@@ -75,8 +73,7 @@ main {
        z-index: 1;
 
        #down-arrow { 
-        width: 30px;
-        height: 30px;
+       @include down-arrow;
 
        }
 
@@ -89,12 +86,8 @@ main {
 #circle-container { 
     background-color: $primary-second; 
     height: 50px;
-    display: flex;
-    justify-content: end;
+   @include flex-content-end;
    
-
-   
-  
 
     #circle { 
     position: relative;
@@ -108,3 +101,64 @@ main {
     
 }
 // HERO END //////////////////
+
+// START OF GET TO KNOW ==============
+
+#about { 
+    background-color: $primary-second;
+
+    @include flex-column-center; 
+
+    h2 { 
+        color: $primary-white-type;
+    }
+
+    #know-me-container { 
+        margin: 0 auto;
+        padding: 1rem;
+        width: 75%;
+        height: auto;
+        border-radius: 20% ;
+        background-color: $primary-one;
+     }
+
+   .get-to-know-svg { 
+
+   }
+
+} 
+
+   #next-section-container{
+    @include flex-colum-end; 
+   h2 {
+    @include section-name-design; 
+    padding-right: 10px;
+    z-index: 1;
+
+    #down-arrow { 
+     @include down-arrow;
+
+    }
+
+    }
+
+
+ } 
+
+ #circle-container { 
+    background-color: $primary-one; 
+    height: 50px;
+  @include flex-content-end;
+   
+
+    #circle { 
+    position: relative;
+    top: -75px; 
+    right: 10px;
+    fill: $primary-second;
+    }
+
+
+ }
+
+

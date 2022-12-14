@@ -2,6 +2,10 @@
   font-family: "rubik-80s";
   src: local("rubik-80s"), url("//fonts/Rubik_80s_Fade/Rubik80sFade-Regular.ttf");
 }
+* {
+  box-sizing: border-box;
+}
+
 main {
   margin: 0;
   padding: 0;
@@ -74,4 +78,51 @@ main {
   top: -75px;
   left: 10px;
   fill: #03666C;
+}
+
+#about {
+  background-color: #C98708;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#about h2 {
+  color: white;
+}
+#about #know-me-container {
+  margin: 0 auto;
+  padding: 1rem;
+  width: 75%;
+  height: auto;
+  border-radius: 20%;
+  background-color: #03666C;
+}
+#next-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#next-section-container h2 {
+  color: #DEDEDE;
+  opacity: 50%;
+  padding-right: 10px;
+  z-index: 1;
+}
+#next-section-container h2 #down-arrow {
+  width: 30px;
+  height: 30px;
+}
+
+#circle-container {
+  background-color: #03666C;
+  height: 50px;
+  display: flex;
+  justify-content: end;
+}
+#circle-container #circle {
+  position: relative;
+  top: -75px;
+  right: 10px;
+  fill: #C98708;
 }/*# sourceMappingURL=home.css.map */
