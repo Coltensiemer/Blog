@@ -162,3 +162,45 @@ main {
  }
 
 
+// End of GE TO KNOW ////////////////
+
+
+// START OF WORKS ==================
+#works { 
+    background-color: $primary-one;
+    @include flex-column-center; 
+
+    h1 { 
+        color: $primary-white-type;
+        margin: 20px auto;
+    }
+    p{ 
+        margin: 0 auto;
+        width: 80%;
+        color: $primary-white-type;
+    }
+
+
+    .works-container { 
+        background-color: $primary-second;
+        display: grid;
+        grid-template-rows: 50px 1fr 30px;
+        grid-template-columns: 150px 3fr;
+        grid-template-areas:
+         "a a b"
+         "a a c"
+        "a a c";
+    } 
+
+         .img { 
+            grid-area: a;
+         }
+
+         .title { 
+            grid-area: b ;
+         }
+
+         .para { 
+            grid-area: c;
+         }
+    }

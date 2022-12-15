@@ -125,4 +125,37 @@ main {
   top: -75px;
   right: 10px;
   fill: #C98708;
+}
+
+#works {
+  background-color: #03666C;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#works h1 {
+  color: white;
+  margin: 20px auto;
+}
+#works p {
+  margin: 0 auto;
+  width: 80%;
+  color: white;
+}
+#works .works-container {
+  background-color: #C98708;
+  display: grid;
+  grid-template-rows: 50px 1fr 30px;
+  grid-template-columns: 150px 3fr;
+  grid-template-areas: "a a b" "a a c" "a a c";
+}
+#works .img {
+  grid-area: a;
+}
+#works .title {
+  grid-area: b;
+}
+#works .para {
+  grid-area: c;
 }/*# sourceMappingURL=home.css.map */
