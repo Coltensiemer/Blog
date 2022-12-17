@@ -25,27 +25,43 @@ main {
     #logomenu-container { 
        @include flex-row-space-between; 
        color: $primary-white-type;
+
+       .logo { 
+        padding-left: 50px;
+       }
+       .menu-btn { 
+        padding-right: 50px;
+       }
+       
        
     }
 
     #hero-name { 
+        display: block;
     color: $primary-white-type;
      align-self: center;
      font-size: 32px;
-
+     padding-top: 1em; 
+    
        img { 
         float: right;
        }
 
-       .hello-span { 
+       #transform { 
+        @include text-shadow; 
+        font-size: 8rem;
+        position: absolute; 
+        top: -10px; 
+        transform: skewY(-6deg);
+       }
+
+       span { 
         font-size: 48px;
         font-family: 'copperplate'; 
-
+ 
+    
         &:hover { 
             color: $primary-second;
-        
-          
-
         }
        }
     }
@@ -61,6 +77,10 @@ main {
       @include primary-button; 
      align-self: center;
      margin: 2em;
+
+     &:hover {      
+         @include button-hover;
+     }
 
     } 
 
@@ -146,7 +166,7 @@ main {
  } 
 
  #circle-container { 
-    background-color: $primary-one; 
+    background-color: $primary-second; 
     height: 50px;
   @include flex-content-end;
    
@@ -155,7 +175,7 @@ main {
     position: relative;
     top: -75px; 
     right: 10px;
-    fill: $primary-second;
+    fill: $primary-one;
     }
 
 
@@ -170,6 +190,13 @@ main {
     background-color: $primary-one;
     @include flex-column-center; 
 
+    button { 
+        @include primary-button; 
+        margin: .5em;
+        width: 100px;
+        height: 50px; 
+    }
+
     h1 { 
         color: $primary-white-type;
         margin: 20px auto;
@@ -182,25 +209,88 @@ main {
 
 
     .works-container { 
-        background-color: $primary-second;
-        display: grid;
-        grid-template-rows: 50px 1fr 30px;
-        grid-template-columns: 150px 3fr;
-        grid-template-areas:
-         "a a b"
-         "a a c"
-        "a a c";
-    } 
+        margin-top: 1em;
+        background-color: $primary-one;
+        display: flex;
 
-         .img { 
-            grid-area: a;
+        .a{ 
+            padding: .25em;
+            align-self: auto;
+           
          }
 
          .title { 
-            grid-area: b ;
+            padding: .25em;
+            
          }
+         
+       
+    } 
+    #next-section-container{
+        @include flex-colum-end; 
 
-         .para { 
-            grid-area: c;
-         }
+       h2 {
+        @include section-name-design; 
+        padding-right: 10px;
+        z-index: 1;
+    
+        #down-arrow { 
+         @include down-arrow;
+    
+        }
+    
+        }
+
+    } 
+}
+
+/// END of WORKS 
+
+
+//  START OF BLOG // 
+
+#blog { 
+    background-color: $primary-second;
+    @include flex-column-center; 
+
+    h1 { 
+        width: 100px;
+        color: $primary-white-type;
+        align-self: start;
+        padding-left: 20px;
+        font-size: 36px;
     }
+
+    button { 
+        align-self: center;
+        @include primary-button; 
+        box-shadow: 0 0 40px 40px $primary-one inset, 0 0 0 0 $primary-one; 
+
+        &:hover { 
+            @include button-hover; 
+
+        }
+    }
+
+    #next-section-container{
+        @include flex-colum-end; 
+
+       h2 {
+        @include section-name-design; 
+        padding-right: 10px;
+        z-index: 1;
+    
+        #down-arrow { 
+         @include down-arrow;
+    
+        }
+    
+        }
+
+    } 
+}
+
+      
+
+     
+    

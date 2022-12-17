@@ -38,8 +38,15 @@
     height: 50px; 
     padding: .5em; 
     border-radius: 20px;
-    background-color: #4E4D4D;
+    background-color: transparent;
+    appearance: none;
+    text-transform: uppercase;
     color: white; 
+    box-shadow: 0 0 40px 40px #C98708 inset, 0 0 0 0 #C98708;
+    transition: all 150ms ease-in-out;
+} 
+@mixin button-hover {
+    box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px white;
     
 }
 
@@ -55,3 +62,10 @@
     color: #DEDEDE; 
     opacity: 50%;
 }
+
+
+
+// Hello Span Design 
+@mixin text-shadow {
+    text-shadow: 40px 26px 0px rgba(201,135,8,0.49);
+} 

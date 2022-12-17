@@ -23,19 +23,34 @@ main {
   justify-content: space-between;
   color: white;
 }
+#hero #logomenu-container .logo {
+  padding-left: 50px;
+}
+#hero #logomenu-container .menu-btn {
+  padding-right: 50px;
+}
 #hero #hero-name {
+  display: block;
   color: white;
   align-self: center;
   font-size: 32px;
+  padding-top: 1em;
 }
 #hero #hero-name img {
   float: right;
 }
-#hero #hero-name .hello-span {
+#hero #hero-name #transform {
+  text-shadow: 40px 26px 0px rgba(201, 135, 8, 0.49);
+  font-size: 8rem;
+  position: absolute;
+  top: -10px;
+  transform: skewY(-6deg);
+}
+#hero #hero-name span {
   font-size: 48px;
   font-family: "copperplate";
 }
-#hero #hero-name .hello-span:hover {
+#hero #hero-name span:hover {
   color: #C98708;
 }
 #hero p {
@@ -47,10 +62,19 @@ main {
   height: 50px;
   padding: 0.5em;
   border-radius: 20px;
-  background-color: #4E4D4D;
+  background-color: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-transform: uppercase;
   color: white;
+  box-shadow: 0 0 40px 40px #C98708 inset, 0 0 0 0 #C98708;
+  transition: all 150ms ease-in-out;
   align-self: center;
   margin: 2em;
+}
+#hero button:hover {
+  box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px white;
 }
 #hero #next-section-container {
   display: flex;
@@ -115,7 +139,7 @@ main {
 }
 
 #circle-container {
-  background-color: #03666C;
+  background-color: #C98708;
   height: 50px;
   display: flex;
   justify-content: end;
@@ -124,7 +148,7 @@ main {
   position: relative;
   top: -75px;
   right: 10px;
-  fill: #C98708;
+  fill: #03666C;
 }
 
 #works {
@@ -133,6 +157,23 @@ main {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+#works button {
+  width: 140px;
+  height: 50px;
+  padding: 0.5em;
+  border-radius: 20px;
+  background-color: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-transform: uppercase;
+  color: white;
+  box-shadow: 0 0 40px 40px #C98708 inset, 0 0 0 0 #C98708;
+  transition: all 150ms ease-in-out;
+  margin: 0.5em;
+  width: 100px;
+  height: 50px;
 }
 #works h1 {
   color: white;
@@ -144,18 +185,78 @@ main {
   color: white;
 }
 #works .works-container {
+  margin-top: 1em;
+  background-color: #03666C;
+  display: flex;
+}
+#works .works-container .a {
+  padding: 0.25em;
+  align-self: auto;
+}
+#works .works-container .title {
+  padding: 0.25em;
+}
+#works #next-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#works #next-section-container h2 {
+  color: #DEDEDE;
+  opacity: 50%;
+  padding-right: 10px;
+  z-index: 1;
+}
+#works #next-section-container h2 #down-arrow {
+  width: 30px;
+  height: 30px;
+}
+
+#blog {
   background-color: #C98708;
-  display: grid;
-  grid-template-rows: 50px 1fr 30px;
-  grid-template-columns: 150px 3fr;
-  grid-template-areas: "a a b" "a a c" "a a c";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
-#works .img {
-  grid-area: a;
+#blog h1 {
+  width: 100px;
+  color: white;
+  align-self: start;
+  padding-left: 20px;
+  font-size: 36px;
 }
-#works .title {
-  grid-area: b;
+#blog button {
+  align-self: center;
+  width: 140px;
+  height: 50px;
+  padding: 0.5em;
+  border-radius: 20px;
+  background-color: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-transform: uppercase;
+  color: white;
+  box-shadow: 0 0 40px 40px #C98708 inset, 0 0 0 0 #C98708;
+  transition: all 150ms ease-in-out;
+  box-shadow: 0 0 40px 40px #03666C inset, 0 0 0 0 #03666C;
 }
-#works .para {
-  grid-area: c;
+#blog button:hover {
+  box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px white;
+}
+#blog #next-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#blog #next-section-container h2 {
+  color: #DEDEDE;
+  opacity: 50%;
+  padding-right: 10px;
+  z-index: 1;
+}
+#blog #next-section-container h2 #down-arrow {
+  width: 30px;
+  height: 30px;
 }/*# sourceMappingURL=home.css.map */
