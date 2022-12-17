@@ -51,7 +51,7 @@ main {
   font-family: "copperplate";
 }
 #hero #hero-name span:hover {
-  color: #C98708;
+  color: #263031;
 }
 #hero p {
   font-size: 32px;
@@ -92,7 +92,7 @@ main {
   height: 30px;
 }
 #hero #circle-container {
-  background-color: #C98708;
+  background-color: #263031;
   height: 50px;
   display: flex;
   justify-content: end;
@@ -105,7 +105,7 @@ main {
 }
 
 #about {
-  background-color: #C98708;
+  background-color: #263031;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -139,7 +139,7 @@ main {
 }
 
 #circle-container {
-  background-color: #C98708;
+  background-color: #263031;
   height: 50px;
   display: flex;
   justify-content: end;
@@ -213,7 +213,7 @@ main {
 }
 
 #blog {
-  background-color: #C98708;
+  background-color: #263031;
   display: flex;
   flex-direction: column;
   justify-content: center;
