@@ -69,3 +69,7 @@
 @mixin text-shadow {
     text-shadow: 40px 26px 0px rgba(201,135,8,0.49);
 } 
+
+@mixin color { 
+    color: red; 
+}
