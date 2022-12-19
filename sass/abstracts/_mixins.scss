@@ -24,7 +24,7 @@
 
 @mixin flex-content-end {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     
 }
 
@@ -61,6 +61,13 @@
 @mixin section-name-design { 
     color: #DEDEDE; 
     opacity: 50%;
+    
+}
+
+@mixin circle { 
+    position: relative;
+    top: -75px; 
+    right: 10px;
 }
 
 
@@ -70,6 +77,3 @@
     text-shadow: 40px 26px 0px rgba(201,135,8,0.49);
 } 
 
-@mixin color { 
-    color: red; 
-}

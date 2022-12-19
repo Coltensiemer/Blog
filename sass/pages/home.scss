@@ -103,18 +103,18 @@ main {
 
 
 
-#circle-container { 
-    background-color: $primary-second; 
-    height: 50px;
-   @include flex-content-end;
-   
+    #circle-container { 
+        background-color: $primary-second; 
+        height: 50px;
+    @include flex-content-end;
+    
 
-    #circle { 
-    position: relative;
-    top: -75px;
-    left:10px; 
-    fill: $primary-one;
-    }
+        #circle { 
+        position: relative;
+        top: -75px;
+        left:10px; 
+        fill: $primary-one;
+        }
 } 
 
 
@@ -161,25 +161,25 @@ main {
     }
 
     }
-
-
- } 
+ }
 
  #circle-container { 
-    background-color: $primary-second; 
+    background-color: $primary-one; 
     height: 50px;
   @include flex-content-end;
    
 
     #circle { 
-    position: relative;
-    top: -75px; 
-    right: 10px;
-    fill: $primary-one;
+        @include circle;
+    fill: $primary-second;
     }
+       
+   
+
+}; 
 
 
- }
+
 
 
 // End of GE TO KNOW ////////////////
@@ -240,11 +240,22 @@ main {
         }
     
         }
+  
+
+
+        
 
     } 
 }
 
+
 /// END of WORKS 
+
+
+
+
+
+
 
 
 //  START OF BLOG // 
@@ -270,27 +281,12 @@ main {
             @include button-hover; 
 
         }
-    }
+    }} 
 
-    #next-section-container{
-        @include flex-colum-end; 
+// END OF BLOG /////////////////
 
-       h2 {
-        @include section-name-design; 
-        padding-right: 10px;
-        z-index: 1;
-    
-        #down-arrow { 
-         @include down-arrow;
-    
-        }
-    
-        }
+// STart of Contact Form ===============
 
-    } 
-}
 
-      
 
-     
     
