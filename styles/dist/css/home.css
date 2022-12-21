@@ -244,4 +244,47 @@ main {
 }
 #blog button:hover {
   box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px white;
+}
+
+#contact {
+  background-color: #03666C;
+  display: flex;
+  flex-direction: column;
+}
+#contact p {
+  text-align: center;
+  font-size: 36px;
+  color: white;
+}
+#contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 10%;
+  gap: 1em;
+}
+#contact form .userinput-container {
+  position: relative;
+}
+#contact form .userinput-container label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  transition: 0.5s;
+  pointer-events: none;
+}
+#contact form .userinput-container input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px white solid;
+  height: 2.5em;
+  color: #C98708;
+  outline: none;
+  background: transparent;
+}
+#contact form .userinput-container input input:valid ~ label {
+  top: -20px;
+  left: 0;
 }/*# sourceMappingURL=home.css.map */

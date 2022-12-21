@@ -287,6 +287,56 @@ main {
 
 // STart of Contact Form ===============
 
+#contact { 
+    background-color: $primary-one;
+   display: flex;
+   flex-direction: column;
+   
+   p { 
+    text-align: center;
+    font-size: 36px; 
+    color: $primary-white-type; 
+   }
+
+    form { 
+        @include flex-column-center; 
+        margin: 10%;
+        gap: 1em; 
+
+        .userinput-container {
+            position: relative;
+
+        label {
+            position: absolute;
+            top: 0; 
+            left: 0; 
+            color: $primary-white-type;
+            transition: .5s; 
+            pointer-events: none;
+
+        }
+
+        input { 
+            width: 100%;
+            border: none; 
+            border-bottom: 2px $primary-white-type solid;
+            height: 2.5em;
+            color: $main-accent; 
+            outline: none;
+            background: transparent;
+
+        input:valid ~ label {
+            top: -20px; 
+            left: 0;  
+         
+        }
+
+    }
+
+
+} 
+}
+} 
 
 
     
