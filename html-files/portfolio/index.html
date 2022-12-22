@@ -156,9 +156,21 @@
 <section id="contact">
 <p> Let's connect!</p>
 <form action="contact-form.php" method="post" class="contact-form">
-    <input type="text" name="name" placeholder="Full Name" id="">
-    <input type="text" name="mail" placeholder="Your Email" id="">
-    <input type="text" name="subject" placeholder="subject" id="">
+    <div class="userinput-container"> 
+   
+    <input type="text" name="name" required='' id=""> 
+    <label> Full Name </label>
+    </div>
+    <div class="userinput-container"> 
+        
+    <input type="email" name="mail" required='' id="">
+    <label> Your Email </label>
+    </div>
+    <div class="userinput-container"> 
+       
+    <input type="text" name="subject" required='' id="">
+    <label>Subject</label>
+    </div>
     <textarea name="message" placeholder="message"></textarea>
     <button type="submit" name="submit">Send Your Email</button>
 </form>

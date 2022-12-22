@@ -276,15 +276,19 @@ main {
   pointer-events: none;
 }
 #contact form .userinput-container input {
+  font-size: 18px;
+  padding: 1.5em;
   width: 100%;
   border: none;
   border-bottom: 2px white solid;
   height: 2.5em;
-  color: #C98708;
+  color: white;
   outline: none;
   background: transparent;
 }
-#contact form .userinput-container input input:valid ~ label {
-  top: -20px;
-  left: 0;
+#contact form .userinput-container input:focus ~ label, #contact form .userinput-container input:valid ~ label {
+  color: #C98708;
+  top: -15px;
+  left: 0px;
+  font-size: 14px;
 }/*# sourceMappingURL=home.css.map */

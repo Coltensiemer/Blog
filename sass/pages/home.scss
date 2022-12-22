@@ -317,20 +317,26 @@ main {
         }
 
         input { 
+            font-size: 18px;
+            padding: 1.5em; 
             width: 100%;
             border: none; 
             border-bottom: 2px $primary-white-type solid;
             height: 2.5em;
-            color: $main-accent; 
+            color: $primary-white-type; 
             outline: none;
             background: transparent;
-
-        input:valid ~ label {
-            top: -20px; 
-            left: 0;  
-         
-        }
-
+            
+            
+            
+          &:focus ~ label, 
+          &:valid ~ label
+          { 
+            color: $main-accent;
+            top: -15px; 
+            left: 0px; 
+            font-size: 14px;
+          }
     }
 
 
