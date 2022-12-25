@@ -9,12 +9,76 @@
 
 * { 
 box-sizing: border-box;
+margin: 0;
 }
 main { 
     margin: 0;
     padding: 0;
 
 }
+
+
+// NAV BAR START=================
+nav{ 
+   
+    @include flex-column-center; 
+    position: relative;
+    background-color: $primary-second; 
+    color: $primary-white-type; 
+    z-index: 999;
+    height: 100vh; 
+    width: 100vw; 
+    display: none; 
+    
+
+    #container-exit { 
+        text-align: end;
+    }
+
+    ul { 
+        
+        margin: auto; 
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+       
+
+        li { 
+            font-size: 48px; 
+            list-style: none; 
+            
+            a{ 
+                text-decoration: none; 
+                color: $primary-white-type;
+
+
+                &:hover { 
+                    color: $main-accent;
+                    cursor: pointer;
+                }
+            
+                
+            }
+            
+            .home { 
+                color: $main-accent; 
+            }
+           
+        }
+    }
+}
+
+
+
+.display { 
+    display: none; 
+
+}
+
+// NAV BAR END /////////////////
+
+
+
 
 
 // HERO START =============
@@ -41,7 +105,7 @@ main {
     color: $primary-white-type;
      align-self: center;
      font-size: 32px;
-     padding-top: 1em; 
+     padding-top: 3em; 
     
        img { 
         float: right;
@@ -51,7 +115,7 @@ main {
         @include text-shadow; 
         font-size: 8rem;
         position: absolute; 
-        top: -10px; 
+        top: -30px; 
         transform: skewY(-6deg);
        }
 
@@ -61,7 +125,7 @@ main {
  
     
         &:hover { 
-            color: $primary-second;
+            color: $main-accent;
         }
        }
     }
@@ -343,6 +407,25 @@ main {
 } 
 }
 } 
+
+#footer { 
+    @include flex-column-center;
+    background-color: $primary-one;
+
+    h1 { 
+        color: $primary-white-type;
+    }
+
+    h2 { 
+        color: $primary-white-type;
+    }
+
+    h3 { 
+        font-size: 10px;   
+        color: $primary-second; 
+     }
+
+}
 
 
     
