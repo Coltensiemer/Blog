@@ -1,17 +1,35 @@
 
 const menuBtnClose = document.getElementById('menu-btn-close'); 
-con
-const menuBtnOpen = document.getElementById('menu-btn'); 
+const menuBtnOpen = document.querySelector('.menu-btn'); 
 
-const navUI = document.querySelector("nav"); 
+const navItems = document.querySelectorAll(".nav-item")
+
+const navUI = document.querySelector(".nav"); 
 
 
 
 
 // EVENT Listener 
-menuBtnOpen.addEventListener('click', (e)=> { 
-    e.preventDefault(); 
 
-    navUI.classList.remove('')
+//OPEN Window
+menuBtnOpen.addEventListener('click', (e)=> { 
+e.preventDefault(); 
+
+    navUI.classList.add('display'); 
 
 } )
+
+
+// Close Menu
+menuBtnClose.addEventListener('click', (e)=> { 
+    e.preventDefault(); 
+
+    if (navUI.classList.contains('display')) {
+    navUI.classList.remove('display'); } 
+
+})
+
+navItems.forEach(e => e.addEventListener('click', ()=>{
+    if (navUI.classList.contains('display')) {
+        navUI.classList.remove('display'); }
+}))

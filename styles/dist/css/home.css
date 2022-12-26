@@ -17,7 +17,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  position: relative;
+  position: absolute;
   background-color: #263031;
   color: white;
   z-index: 999;
@@ -27,9 +27,11 @@ nav {
 }
 nav #container-exit {
   text-align: end;
+  padding-right: 50px;
+  font-size: 32px;
 }
 nav ul {
-  margin: auto;
+  margin: 50px auto;
   display: flex;
   flex-direction: column;
   gap: 2em;
@@ -51,7 +53,8 @@ nav ul li .home {
 }
 
 .display {
-  display: none;
+  display: inline-block;
+  position: fixed;
 }
 
 #hero {
@@ -71,6 +74,9 @@ nav ul li .home {
 }
 #hero #logomenu-container .menu-btn {
   padding-right: 50px;
+}
+#hero #logomenu-container .menu-btn:hover {
+  cursor: pointer;
 }
 #hero #hero-name {
   display: block;
