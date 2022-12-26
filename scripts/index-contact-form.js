@@ -1,1 +1,0 @@
-const callToAction = document.getElementById('call-to-action'); 

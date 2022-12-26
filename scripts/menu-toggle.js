@@ -29,6 +29,7 @@ menuBtnClose.addEventListener('click', (e)=> {
 
 })
 
+// Nav Items inside NAV to close menu once clicked. 
 navItems.forEach(e => e.addEventListener('click', ()=>{
     if (navUI.classList.contains('display')) {
         navUI.classList.remove('display'); }
