@@ -1,0 +1,85 @@
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  padding: 2em;
+  list-style: none;
+}
+footer nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+}
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  gap: 2em;
+}
+
+#contact-hero {
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  border: 2px black solid;
+  border-bottom-left-radius: 90%;
+  border-bottom-right-radius: 90%;
+}
+#contact-hero h1 {
+  font-size: 32px;
+}
+#contact-hero #arrow-container {
+  display: flex;
+  justify-content: center;
+}
+#contact-hero #arrow-container svg {
+  fill: black;
+}
+#contact-hero #arrow-container svg:hover {
+  fill: #6CE1F2;
+  transform: scale(2) translateY(5px);
+  transition-duration: 800ms;
+}
+
+#form-container {
+  padding: 5em;
+  display: flex;
+  justify-content: center;
+}
+#form-container #personal-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 0.5em;
+}
+#form-container .input-group {
+  padding: 1em;
+}
+#form-container .input-text {
+  width: 100%;
+  padding: 0.5em;
+}
+#form-container #submit-container {
+  display: flex;
+  justify-content: center;
+}
+#form-container #submit-container #submit {
+  cursor: pointer;
+  width: 75%;
+  height: 4em;
+  border-radius: 10%;
+  text-align: center;
+  color: white;
+  background-color: wheat;
+}
+#form-container #submit-container #submit:hover {
+  color: #40434E;
+  background-color: #6CE1F2;
+}/*# sourceMappingURL=contact.css.map */
