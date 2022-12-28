@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "rubik-80s";
+  src: local("rubik-80s"), url("//fonts/Rubik_80s_Fade/Rubik80sFade-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header #logomenu-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #03666C;
+}/*# sourceMappingURL=all-articles.css.map */

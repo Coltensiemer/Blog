@@ -1,0 +1,19 @@
+@use '../abstracts' as *; 
+
+
+
+// GLOBAL========
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    }
+
+
+    header{ 
+
+        #logomenu-container { 
+            @include flex-row-space-between; 
+            background-color: $primary-one;
+        }
+    }
+
