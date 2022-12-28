@@ -7,8 +7,7 @@
   margin: 0;
 }
 
-header #logomenu-container {
-  display: flex;
-  justify-content: space-between;
-  background-color: #03666C;
-}/*# sourceMappingURL=blog.css.map */
+main {
+  margin: 10;
+  padding: 0;
+}/*# sourceMappingURL=FlexboxLeaning.css.map */
