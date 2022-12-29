@@ -23,7 +23,6 @@ nav {
   z-index: 999;
   height: 100vh;
   width: 100vw;
-  display: none;
 }
 nav #container-exit {
   text-align: end;
@@ -171,6 +170,7 @@ nav ul li .home {
   border-radius: 20%;
   background-color: #03666C;
 }
+
 #next-section-container {
   display: flex;
   flex-direction: column;
