@@ -7,8 +7,122 @@
   margin: 0;
 }
 
-header #logomenu-container {
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+section,
+.section {
+  padding: min(10vh, 10em) 0;
+}
+
+body {
+  background: #03666C;
+}
+
+nav {
   display: flex;
-  justify-content: space-between;
-  background-color: #03666C;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  background-color: #263031;
+  color: white;
+  z-index: 999;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+}
+nav #container-exit {
+  text-align: end;
+  padding-right: 50px;
+  font-size: 32px;
+}
+nav ul {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+nav ul li {
+  font-size: 48px;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:hover {
+  color: #C98708;
+  cursor: pointer;
+}
+nav ul li .home {
+  color: #C98708;
+}
+
+.display {
+  display: inline-block;
+  position: fixed;
+}
+
+.section_title {
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.section_para {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+
+.articles {
+  padding-top: 40px;
+  list-style: none;
+  color: white;
+}
+
+article {
+  margin: 20px auto;
+  padding: 0.5em;
+  text-align: center;
+}
+article .snippet_author {
+  font-size: 12px;
+}
+article .snippet_description {
+  font-size: 16px;
+  margin: 10px;
+}
+article .article-btn {
+  width: 140px;
+  height: 50px;
+  padding: 0.5em;
+  border-radius: 20px;
+  background-color: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-transform: uppercase;
+  color: white;
+  box-shadow: 0 0 40px 40px #C98708 inset, 0 0 0 0 #C98708;
+  transition: all 150ms ease-in-out;
+  padding: 1.1em;
+  font-size: 12px;
+  text-decoration: none;
+  width: 50px !important;
+  height: 25px !important;
+}
+article .article-btn:hover {
+  box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px white;
 }/*# sourceMappingURL=blog.css.map */

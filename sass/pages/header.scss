@@ -1,0 +1,13 @@
+@use '../abstracts' as *; 
+
+
+header{ 
+
+    #logomenu-container { 
+        @include flex-row-space-between; 
+        background-color: $primary-one;
+        color: white; 
+    
+        
+    }
+}

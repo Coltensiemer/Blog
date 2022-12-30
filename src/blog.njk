@@ -4,19 +4,23 @@ layout: 'blog-temp.njk'
 --- 
 
 
+
 <div class="section-container"> 
-<h1 class="section-title">Recent articles<h1> 
+<h1 class="section_title">Weclome to my Blog!<h1>
+<p class="section_para"> This blog is focus on my web development learning. Sometimes the best way to learn, is to explain what I jsut learned. 
+    so each article I take a subject I learned and try to break it down in my own words.  
 
 <ul role="list" class="articles">
 
-{%- for post in collections.post  -%}
+{%- for post in collections.post | reverse  -%}
 <li> 
 <article class="article_snippet"> 
 
-<h3 class="snippet_title">{{ post.data.title }}</h3> 
-<h4 class="snippet_author"> {{ post.data.author}} </h4>  
+<h3 class="snippet_title"> <a href="{{ post.url }}">{{ post.data.title }}</a> </h3> 
+{# <h4 class="snippet_author"> {{ post.data.author}} </h4>   #}
+<h4 class="snippet_date">{{post.data.date | postDate}}</h4> 
 <p class="snippet_description"> {{post.data.description}}</p> 
-
+<a href="{{ post.url }} " class="article-btn"> Continue to Read </a> 
 </article>
 
 

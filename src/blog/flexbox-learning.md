@@ -1,6 +1,7 @@
 ---
 title: Flexbox Learning 
 author: Colten Siemer
+date: 2022-01-01
 tags: post
 imageAlt: testing
 description: lorem lorme a sdfasdf asdf asdg asdgad asd gadsg a a dsgad gfadg asdg ads

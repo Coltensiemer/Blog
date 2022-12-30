@@ -1,6 +1,7 @@
 ---
-title: article two
+title: Article two
 author: Colten Siemer
+date: 2018-10-02
 tags: post
 imageAlt: testing
 description: lorem lorme a sdfasdf asdf asdg asdgad asd gadsg a a dsgad gfadg asdg ads
