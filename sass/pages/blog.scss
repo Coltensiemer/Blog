@@ -30,6 +30,12 @@ body {
     background: $primary-one;
 }
 
+img { 
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+}
+
 // NAV BAR START=================
 nav {
     @include flex-column-center;
