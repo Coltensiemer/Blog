@@ -73,11 +73,41 @@ nav{
 
 
 
-.display { //FOR Nav Menu 
+.display { //FOR Nav Menu BTN
     display: inline-block;  
     position: fixed;
 
 }
+
+// Nav Bar on left side 
+.nav-bar-left { 
+    position: fixed;
+     opacity: 90%;
+    background-color: $primary-second; 
+    width: 10em; 
+    height: 100vh;
+    padding-top: 2em; 
+    display: none;
+  
+
+    ul { 
+        list-style: none;
+        display: flex; 
+        flex-direction: column; 
+        gap: 2em; 
+        
+        
+
+       li { 
+        
+        color: $primary-white-type !important;
+        }
+
+    }
+    
+}
+//END of Nav Bar left side 
+
 
 // NAV BAR END /////////////////
 
@@ -201,23 +231,26 @@ nav{
 
     @include flex-column-center; 
 
+
     h2 { 
         color: $primary-white-type;
     }
 
     #know-me-container { 
-        margin: 0 auto;
-        padding: 1rem;
+        margin: 4em auto;
+        padding: 1em 2em 2em 2em;
         width: 75%;
         height: auto;
-        border-radius: 20% ;
+        border-radius: 2%;
         background-color: $primary-one;
+
      }
 
 
 
 } 
 
+// Circle Container for GET to KNOW
    #next-section-container{
     @include flex-colum-end; 
    h2 {
@@ -296,6 +329,7 @@ nav{
          
        
     } 
+    // Circle Container for WORKS
     #next-section-container{
         @include flex-colum-end; 
 
@@ -310,12 +344,22 @@ nav{
         }
     
         }
-  
 
 
-        
+    }
+    
+    #circle-container { 
+        background-color: $primary-second; 
+        height: 50px;
+      @include flex-content-end;
+       
+    
+        #circle { 
+            @include circle;
+        fill: $primary-one;
+        }
 
-    } 
+}
 }
 
 
@@ -332,7 +376,7 @@ nav{
 
 #blog { 
     background-color: $primary-second;
-    @include flex-column-center; 
+
 
     h1 { 
         width: 100px;
@@ -340,6 +384,10 @@ nav{
         align-self: start;
         padding-left: 20px;
         font-size: 36px;
+    }
+
+    ul { 
+        color: $primary-white-type;
     }
 
     button { 
@@ -351,7 +399,10 @@ nav{
             @include button-hover; 
 
         }
-    }} 
+    }
+ 
+
+} 
 
 // END OF BLOG /////////////////
 
@@ -433,5 +484,3 @@ nav{
 
 }
 
-
-    

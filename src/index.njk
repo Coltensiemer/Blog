@@ -4,7 +4,16 @@ layout: 'index-temp.njk'
 --- 
 
 
+<div class="nav-bar-left"> 
+  <ul>
+        <li class="nav-item"><a href="#hero" class="home">Home.</a></li>
+        <li class="nav-item"><a href="#about">About Me.</a></li>
+        <li class="nav-item"><a href="#works">My Works.</a></li>
+        <li class="nav-item"><a href="/blog/">Blog.</a></li>
+        <li class="nav-item"><a href="#contact"> Contact Me.</a></li>
+    </ul>
 
+</div> 
 
 
 
@@ -41,7 +50,9 @@ layout: 'index-temp.njk'
 <h2> Get To Know Me</h2>
 <div id="know-me-container">
 <p class="know-me">
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste maxime quo libero laudantium incidunt excepturi, facere veritatis esse, hic aliquid adipisci similique necessitatibus deleniti ipsum obcaecati cumque cum, perferendis nesciunt!
+    I am a self taught Web Developer with a passion for achieving excellent products for users and clients. 
+    Since my first few lines of code in JavaScript to building full scale applications in react, I am hooked on learning and work with a team to create high end products.
+    I look to work with like minded indivuals to reach new heights.   
 </p>
 
 
@@ -117,8 +128,19 @@ layout: 'index-temp.njk'
 <!-- BLOG START =================== -->
 <section id="blog">
 
+TODO: {# FIX with GRID.. #}
 <h1> As a Developer, <br> Learning is key. </h1> 
+
+<div id="recent-post"> 
+    <h1> Recent Posts </h1> 
+    {%- for post in collections.post -%} 
+  <ul> 
+   <h3 class="snippet_title"> <a href="{{ post.url }}">{{ post.data.title }}</a> </h3> 
+    {%- endfor -%}
+<ul> 
+
 <button> Explore</button>
+</div> 
 
 <div id="next-section-container">
     <h2> Contact Me <svg id="down-arrow" viewBox="0 0 24 24">

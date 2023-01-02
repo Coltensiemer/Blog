@@ -57,6 +57,25 @@ nav ul li .home {
   position: fixed;
 }
 
+.nav-bar-left {
+  position: fixed;
+  opacity: 90%;
+  background-color: #263031;
+  width: 10em;
+  height: 100vh;
+  padding-top: 2em;
+  display: none;
+}
+.nav-bar-left ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.nav-bar-left ul li {
+  color: white !important;
+}
+
 #hero {
   display: flex;
   flex-direction: column;
@@ -164,11 +183,11 @@ nav ul li .home {
   color: white;
 }
 #about #know-me-container {
-  margin: 0 auto;
-  padding: 1rem;
+  margin: 4em auto;
+  padding: 1em 2em 2em 2em;
   width: 75%;
   height: auto;
-  border-radius: 20%;
+  border-radius: 2%;
   background-color: #03666C;
 }
 
@@ -261,13 +280,21 @@ nav ul li .home {
   width: 30px;
   height: 30px;
 }
+#works #circle-container {
+  background-color: #263031;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+#works #circle-container #circle {
+  position: relative;
+  top: -75px;
+  right: 10px;
+  fill: #03666C;
+}
 
 #blog {
   background-color: #263031;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
 }
 #blog h1 {
   width: 100px;
@@ -275,6 +302,9 @@ nav ul li .home {
   align-self: start;
   padding-left: 20px;
   font-size: 36px;
+}
+#blog ul {
+  color: white;
 }
 #blog button {
   align-self: center;
