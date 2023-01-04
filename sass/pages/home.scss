@@ -79,33 +79,7 @@ nav{
 
 }
 
-// Nav Bar on left side 
-.nav-bar-left { 
-    position: fixed;
-     opacity: 90%;
-    background-color: $primary-second; 
-    width: 10em; 
-    height: 100vh;
-    padding-top: 2em; 
-    display: none;
-  
 
-    ul { 
-        list-style: none;
-        display: flex; 
-        flex-direction: column; 
-        gap: 2em; 
-        
-        
-
-       li { 
-        
-        color: $primary-white-type !important;
-        }
-
-    }
-    
-}
 //END of Nav Bar left side 
 
 

@@ -2,9 +2,54 @@
   font-family: "rubik-80s";
   src: local("rubik-80s"), url("//fonts/Rubik_80s_Fade/Rubik80sFade-Regular.ttf");
 }
-header #logomenu-container {
+header #logomenu-container-large {
+  display: flex;
+  justify-content: space-between;
+  justify-content: start !important;
+  background-color: #03666C;
+  color: white;
+  padding: 1em;
+  font-size: 24px;
+}
+header #logomenu-container-large ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5em;
+}
+header #logomenu-container-large ul li {
+  gap: 5em;
+  list-style: none;
+}
+header #logomenu-container-large ul a {
+  color: white;
+  text-decoration: none;
+}
+header #logomenu-container-small {
   display: flex;
   justify-content: space-between;
   background-color: #03666C;
   color: white;
+  padding: 0.5em;
+}
+header #logomenu-container-small .logo {
+  padding-left: 25px;
+}
+header #logomenu-container-small .menu-btn {
+  padding-right: 25px;
+}
+@media (min-width: 1024px) {
+  header #logomenu-container-small {
+    display: none;
+  }
+}
+@media (max-width: 1023px) {
+  header #logomenu-container-large {
+    display: none;
+  }
+}
+
+.line-spacer {
+  height: 2px;
+  width: 100vw;
+  background-color: #C98708;
 }/*# sourceMappingURL=header.css.map */
