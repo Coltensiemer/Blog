@@ -127,7 +127,7 @@ nav{
         @include text-shadow; 
         font-size: 8rem;
         position: absolute; 
-        top: -30px; 
+        top: 0px; 
         transform: skewY(-6deg);
        }
 
@@ -397,6 +397,17 @@ nav{
         @include flex-column-center; 
         margin: 10%;
         gap: 1em; 
+        
+        //MEDIA Changes For form 
+        @media (min-width: $laptops) { 
+            width: 700px;
+           max-width: 1000px;
+           margin: 20px auto;
+        }
+            
+   
+            
+        }
 
         .userinput-container {
             position: relative;
@@ -428,16 +439,19 @@ nav{
           &:valid ~ label
           { 
             color: $main-accent;
-            top: -15px; 
+            top: -5px; 
             left: 0px; 
-            font-size: 14px;
+            font-size: 12px;
           }
     }
 
 
 } 
 }
-} 
+
+
+
+
 
 #footer { 
     @include flex-column-center;

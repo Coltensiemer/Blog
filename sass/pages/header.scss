@@ -11,8 +11,11 @@ header{
             justify-content: start !important; 
             background-color: $primary-one;
             color: white; 
-            padding: 1em;
+            padding: .5em; 
+            
             font-size: 24px;
+        
+            
             ul { 
                 display: flex; 
                 justify-content: space-evenly;
@@ -82,6 +85,7 @@ header{
     height: 2px;
     width: 100vw;
     background-color: $main-accent;
+  
    
 } 
 
