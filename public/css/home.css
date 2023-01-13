@@ -244,12 +244,15 @@ nav ul li .home {
   color: white;
 }
 .works .works-container {
-  margin-top: 1em;
-  background-color: #03666C;
+  max-width: 25%;
+  background-color: #263031;
+  border: #C98708 1px solid;
+  margin: 1em;
   display: flex;
+  flex-direction: column;
 }
 .works .works-container .a {
-  padding: 0.25em;
+  padding: 1em;
   align-self: auto;
 }
 .works .works-container .title {

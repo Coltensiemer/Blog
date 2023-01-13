@@ -297,12 +297,17 @@ nav{
 
 
     .works-container { 
-        margin-top: 1em;
-        background-color: $primary-one;
+      max-width: 25%;
+        background-color: $primary-second;
+        border: $main-accent 1px solid;
+        margin: 1em;
+        
+        
         display: flex;
+     flex-direction: column;
 
         .a{ 
-            padding: .25em;
+            padding: 1em;
             align-self: auto;
            
          }

@@ -3,13 +3,12 @@
 //HEADER START 
 header{ 
 
-        #logomenu-container-large,{ 
+        #logomenu-container-large { 
             @include flex-row-space-between; 
             justify-content: start !important; 
             background-color: $primary-one;
             color: white; 
             padding: .5em; 
-            
             font-size: 24px;
             ul { 
                 display: flex; 

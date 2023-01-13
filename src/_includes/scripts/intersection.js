@@ -12,12 +12,13 @@ let options = {
 const observer = new IntersectionObserver(function (entires, observer) { 
     entires.forEach(entry => { 
         console.log(entry.target);
+        entry.target.classList.toggle('animate-in')
     })
-}, options)
+}, options); 
 
 
+observer.observe(sections); 
 
-
-sections.forEach(section => {
-observer.observe(section);
-}) 
+// sections.forEach(section => {
+// observer.observe(section);
+// }) 
