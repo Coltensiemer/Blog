@@ -57,56 +57,65 @@ nav ul li .home {
   position: fixed;
 }
 
-#hero {
+@media (min-width: 1024px) {
+  .transform {
+    position: relative !important;
+    left: -150px !important;
+  }
+  .transform span {
+    font-size: 62px !important;
+  }
+}
+.hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   background-color: #03666C;
 }
-#hero #logomenu-container {
+.hero .logomenu-container {
   display: flex;
   justify-content: space-between;
   color: white;
 }
-#hero #logomenu-container .logo {
+.hero .logomenu-container .logo {
   padding-left: 50px;
 }
-#hero #logomenu-container .menu-btn {
+.hero .logomenu-container .menu-btn {
   padding-right: 50px;
 }
-#hero #logomenu-container .menu-btn:hover {
+.hero .logomenu-container .menu-btn:hover {
   cursor: pointer;
 }
-#hero #hero-name {
+.hero .hero-name {
   display: block;
   color: white;
   align-self: center;
   font-size: 32px;
   padding-top: 3em;
 }
-#hero #hero-name img {
+.hero .hero-name img {
   float: right;
 }
-#hero #hero-name #transform {
+.hero .hero-name .transform {
   text-shadow: 40px 26px 0px rgba(201, 135, 8, 0.49);
   font-size: 8rem;
   position: absolute;
   top: 0px;
   transform: skewY(-6deg);
 }
-#hero #hero-name span {
+.hero .hero-name span {
   font-size: 48px;
   font-family: "copperplate";
 }
-#hero #hero-name span:hover {
+.hero .hero-name span:hover {
   color: #C98708;
 }
-#hero p {
+.hero p {
   font-size: 32px;
   color: rgba(201, 135, 8, 0.5);
 }
-#hero button {
+.hero button {
   width: 140px;
   height: 50px;
   padding: 0.5em;
@@ -122,48 +131,48 @@ nav ul li .home {
   align-self: center;
   margin: 2em;
 }
-#hero button:hover {
+.hero button:hover {
   box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px white;
 }
-#hero #next-section-container {
+.hero .next-section-container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-#hero #next-section-container h2 {
+.hero .next-section-container h2 {
   color: #DEDEDE;
   opacity: 50%;
   padding-right: 10px;
   z-index: 1;
 }
-#hero #next-section-container h2 #down-arrow {
+.hero .next-section-container h2 .down-arrow {
   width: 30px;
   height: 30px;
 }
-#hero #circle-container {
+.hero .circle-container {
   background-color: #263031;
   height: 50px;
   display: flex;
   justify-content: flex-end;
 }
-#hero #circle-container #circle {
+.hero .circle-container .circle {
   position: relative;
   top: -75px;
   left: 10px;
   fill: #03666C;
 }
 
-#about {
+.about {
   background-color: #263031;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
-#about h2 {
+.about h2 {
   color: white;
 }
-#about #know-me-container {
+.about .know-me-container {
   margin: 4em auto;
   padding: 1em 2em 2em 2em;
   width: 75%;
@@ -172,43 +181,43 @@ nav ul li .home {
   background-color: #03666C;
 }
 
-#next-section-container {
+.next-section-container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-#next-section-container h2 {
+.next-section-container h2 {
   color: #DEDEDE;
   opacity: 50%;
   padding-right: 10px;
   z-index: 1;
 }
-#next-section-container h2 #down-arrow {
+.next-section-container h2 #down-arrow {
   width: 30px;
   height: 30px;
 }
 
-#circle-container {
+.circle-container {
   background-color: #03666C;
   height: 50px;
   display: flex;
   justify-content: flex-end;
 }
-#circle-container #circle {
+.circle-container .circle {
   position: relative;
   top: -75px;
   right: 10px;
   fill: #263031;
 }
 
-#works {
+.works {
   background-color: #03666C;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
-#works button {
+.works button {
   width: 140px;
   height: 50px;
   padding: 0.5em;
@@ -225,69 +234,69 @@ nav ul li .home {
   width: 100px;
   height: 50px;
 }
-#works h1 {
+.works h1 {
   color: white;
   margin: 20px auto;
 }
-#works p {
+.works p {
   margin: 0 auto;
   width: 80%;
   color: white;
 }
-#works .works-container {
+.works .works-container {
   margin-top: 1em;
   background-color: #03666C;
   display: flex;
 }
-#works .works-container .a {
+.works .works-container .a {
   padding: 0.25em;
   align-self: auto;
 }
-#works .works-container .title {
+.works .works-container .title {
   padding: 0.25em;
 }
-#works #next-section-container {
+.works .next-section-container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-#works #next-section-container h2 {
+.works .next-section-container h2 {
   color: #DEDEDE;
   opacity: 50%;
   padding-right: 10px;
   z-index: 1;
 }
-#works #next-section-container h2 #down-arrow {
+.works .next-section-container h2 .down-arrow {
   width: 30px;
   height: 30px;
 }
-#works #circle-container {
+.works .circle-container {
   background-color: #263031;
   height: 50px;
   display: flex;
   justify-content: flex-end;
 }
-#works #circle-container #circle {
+.works .circle-container .circle {
   position: relative;
   top: -75px;
   right: 10px;
   fill: #03666C;
 }
 
-#blog {
+.blog {
   background-color: #263031;
 }
-#blog h1 {
+.blog h1 {
   width: 100px;
   color: white;
   align-self: start;
   padding-left: 20px;
   font-size: 36px;
 }
-#blog ul {
+.blog ul {
   color: white;
 }
-#blog button {
+.blog button {
   align-self: center;
   width: 140px;
   height: 50px;
@@ -303,21 +312,21 @@ nav ul li .home {
   transition: all 150ms ease-in-out;
   box-shadow: 0 0 40px 40px #03666C inset, 0 0 0 0 #03666C;
 }
-#blog button:hover {
+.blog button:hover {
   box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px white;
 }
 
-#contact {
+.contact {
   background-color: #03666C;
   display: flex;
   flex-direction: column;
 }
-#contact p {
+.contact p {
   text-align: center;
   font-size: 36px;
   color: white;
 }
-#contact form {
+.contact form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -326,16 +335,16 @@ nav ul li .home {
   gap: 1em;
 }
 @media (min-width: 1024px) {
-  #contact form {
+  .contact form {
     width: 700px;
     max-width: 1000px;
     margin: 20px auto;
   }
 }
-#contact .userinput-container {
+.contact .userinput-container {
   position: relative;
 }
-#contact .userinput-container label {
+.contact .userinput-container label {
   position: absolute;
   top: 0;
   left: 0;
@@ -343,7 +352,7 @@ nav ul li .home {
   transition: 0.5s;
   pointer-events: none;
 }
-#contact .userinput-container input {
+.contact .userinput-container input {
   font-size: 18px;
   padding: 1.5em;
   width: 100%;
@@ -354,27 +363,36 @@ nav ul li .home {
   outline: none;
   background: transparent;
 }
-#contact .userinput-container input:focus ~ label, #contact .userinput-container input:valid ~ label {
+.contact .userinput-container input:focus ~ label, .contact .userinput-container input:valid ~ label {
   color: #C98708;
   top: -5px;
   left: 0px;
   font-size: 12px;
 }
 
-#footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  background-color: #03666C;
+.animate-in {
+  -webkit-animation: fade-in 1s ease-in-out;
+          animation: fade-in 1s ease-in-out;
 }
-#footer h1 {
-  color: white;
+
+@-webkit-keyframes fade-in {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
-#footer h2 {
-  color: white;
-}
-#footer h3 {
-  font-size: 10px;
-  color: #263031;
+
+@keyframes fade-in {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }/*# sourceMappingURL=home.css.map */

@@ -1,9 +1,6 @@
 @use '../abstracts' as *; 
 
-
-
-
-
+//HEADER START 
 header{ 
 
         #logomenu-container-large,{ 
@@ -14,24 +11,18 @@ header{
             padding: .5em; 
             
             font-size: 24px;
-        
-            
             ul { 
                 display: flex; 
                 justify-content: space-evenly;
-                gap: 5em; 
-                
+                gap: 5em;    
                 li { 
                     gap: 5em; 
                     list-style: none; 
                 }
-
                 a { 
                     color: $primary-white-type; 
                     text-decoration: none; 
                 }
-
-
             }
     }
 
@@ -50,26 +41,17 @@ header{
 
         .menu-btn { 
             padding-right: 25px;
-        } 
-
-     
- 
-
-        
+        }    
     }
 
 
 
 
-// Large Devices MEDIA 
-    @media (min-width: $laptops) { 
+// Large Devices MEDIA FOR HEADER 
+ @media (min-width: $laptops) { 
         #logomenu-container-small {
             display: none;
-        
         }
-
-        
-
 }
 @media (max-width: ($laptops - 1px)  ) { 
     #logomenu-container-large {
@@ -77,16 +59,51 @@ header{
     
     }
 } 
+}
 
-} 
 
+// END OF HEADER 
 
 .line-spacer { 
     height: 2px;
     width: 100vw;
     background-color: $main-accent;
   
-   
 } 
 
 
+
+// START OF FOOTER 
+
+
+* { 
+    margin: 0;
+}
+
+.site-footer { 
+    background-color: $primary-second;
+    color: $primary-white-type;
+    left: 0; 
+    bottom: 0; 
+    width: 100%; 
+    padding: 1.5em;
+
+    @include flex-row-space-between;
+
+    h1 { 
+        font-size: 24px;
+        padding-bottom: .25em;
+    }
+
+    p { 
+        font-size: 10px;
+    }
+
+    .social-media { 
+        padding: .25em;
+
+        svg { 
+            padding: .25em;
+          }
+    }
+}

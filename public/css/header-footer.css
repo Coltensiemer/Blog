@@ -52,4 +52,32 @@ header #logomenu-container-small .menu-btn {
   height: 2px;
   width: 100vw;
   background-color: #C98708;
-}/*# sourceMappingURL=header.css.map */
+}
+
+* {
+  margin: 0;
+}
+
+.site-footer {
+  background-color: #263031;
+  color: white;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+.site-footer h1 {
+  font-size: 24px;
+  padding-bottom: 0.25em;
+}
+.site-footer p {
+  font-size: 10px;
+}
+.site-footer .social-media {
+  padding: 0.25em;
+}
+.site-footer .social-media svg {
+  padding: 0.25em;
+}/*# sourceMappingURL=header-footer.css.map */

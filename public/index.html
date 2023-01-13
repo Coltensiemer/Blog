@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="/css/header.css"> 
-    <link rel="stylesheet" href="/css/footer.css"> 
+    <link rel="stylesheet" href="/css/header-footer.css">  
     <link rel="stylesheet" href="css/home.css">
     <script src="https://kit.fontawesome.com/1b0a8f8e7d.js" crossorigin="anonymous" defer></script>
     <script src="./scripts/menu-toggle.js" defer></script> 
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="./scripts/intersection.js" defer></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
     <title>Home</title>
 </head>
 <nav class="nav">
@@ -19,9 +19,10 @@
     <ul>
         <li class="nav-item"><a href="#hero" class="home">Home.</a></li>
         <li class="nav-item"><a href="/blog/">Blog.</a></li>
-        <li class="nav-item"><a href="#contact"> Contact Me.</a></li>
+        <li class="nav-item"><a href="#contact">Contact Me.</a></li>
     </ul>
-</nav>}
+</nav>
+
 <body>
      <header class="page-header">
 
@@ -46,26 +47,24 @@
 </header> 
 <main>
      
-
-
-    <main>
+<main>
 
 <!-- START OF HERO============== -->
-<section id="hero">
+<section class="hero">
 
 
-<h1 id="hero-name"><div id="transform"><span> H</span><span>E</span><span>L</span><span>L</span><span>O</span><span>!</span> </div> <img src="/src/assests/images/fake-header.svg" height="75px">  <br> I'm <br>Colten  Siemer</h1> 
-<p> Web Developer </p>
-<button id="hero-connect">Lets Connect</button>
+<h1 class="hero-name animate-in"><div class="transform"><span> H</span><span>E</span><span>L</span><span>L</span><span>O</span><span>!</span> </div> <img src="/src/assests/images/fake-header.svg" height="75px">  <br> I'm <br>Colten Siemer</h1> 
+<p class='animate-in'> Web Developer </p>
+<button class="hero-connect animate-in">Lets Connect</button>
 
-<div id="next-section-container">
-<h2> About <svg id="down-arrow" viewBox="0 0 24 24">
+<div class="next-section-container">
+<h2> About <svg class="down-arrow" viewBox="0 0 24 24">
     <path fill="currentColor" d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z" />
 </svg> 
 </h2>
 </div>
-<div id="circle-container">
-<svg id="circle" style="width:128px;height:128px" viewBox="0 0 24 24">
+<div class="circle-container">
+<svg class="circle" style="width:128px;height:128px" viewBox="0 0 24 24">
     <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
 </svg>
 </div>
@@ -77,9 +76,9 @@
 
 
 <!-- GET TO KNOW  START ========= -->
-<section id="about" class="about">
+<section class="about">
 <h2> Get To Know Me</h2>
-<div id="know-me-container">
+<div class="know-me-container">
 <p class="know-me">
     I am a self taught Web Developer with a passion for achieving excellent products for users and clients. 
     Since my first few lines of code in JavaScript to building full scale applications in react, I am hooked on learning and work with a team to create high end products.
@@ -103,14 +102,14 @@
 </div>
 
 
-<div id="next-section-container">
+<div class="next-section-container">
     <h2> My Works <svg id="down-arrow" viewBox="0 0 24 24">
         <path fill="currentColor" d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z" />
     </svg> 
     </h2>
     </div>
-    <div id="circle-container">
-    <svg id="circle" style="width:128px;height:128px" viewBox="0 0 24 24">
+    <div class="circle-container">
+    <svg class="circle" style="width:128px;height:128px" viewBox="0 0 24 24">
         <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
     </svg>
     </div>
@@ -119,13 +118,13 @@
 
 
 <!-- WOKR START================= -->
-<section id="works">
+<section class="works">
     <h1> Check These Out.  </h1>
     <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio nam aut voluptatem delectus rerum doloremque sunt, voluptate quos debitis porro. Quo voluptatem eum totam delectus doloribus consequuntur omnis reiciendis fugiat?</p>
 
     <div class="works-container">
         <div class="a">
-            <img src="/images/Guess The number game.png" height="200px"  width="250"alt="">
+            <img src="./assests/images/Guess The number game.png" height="200px"  width="250"alt="">
         </div>
         <div class="title">
             <h1> Guess the Number </h1>
@@ -138,14 +137,14 @@
 
     </div>
 
-    <div id="next-section-container">
+    <div class="next-section-container">
         <h2> The Biog  <svg id="down-arrow" viewBox="0 0 24 24">
             <path fill="currentColor" d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z" />
         </svg> 
         </h2>
         </div>
-        <div id="circle-container">
-        <svg id="circle" style="width:128px;height:128px" viewBox="0 0 24 24">
+        <div class="circle-container">
+        <svg class="circle" style="width:128px;height:128px" viewBox="0 0 24 24">
             <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
         </svg>
         </div>
@@ -157,35 +156,30 @@
 
 
 <!-- BLOG START =================== -->
-<section id="blog">
+<section class="blog">
 
 TODO: 
 <h1> As a Developer, <br> Learning is key. </h1> 
 
-<div id="recent-post"> 
+<div class="recent-post"> 
     <h1> Recent Posts </h1><ul> 
    <h3 class="snippet_title"> <a href="/blog/2023-01-01 flexbox_learning/">Flexbox Learning</a> </h3><ul> 
+   <h3 class="snippet_title"> <a href="/blog/2023-01-15 Importance of the index file/">Importance of index</a> </h3><ul> 
 
 <button> Explore</button>
 </div> 
 
-<div id="next-section-container">
+<div class="next-section-container">
     <h2> Contact Me <svg id="down-arrow" viewBox="0 0 24 24">
         <path fill="currentColor" d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z" />
     </svg> 
     </h2>
     </div>
-    <div id="circle-container">
-    <svg id="circle" style="width:128px;height:128px" viewBox="0 0 24 24">
+    <div class="circle-container">
+    <svg class="circle" style="width:128px;height:128px" viewBox="0 0 24 24">
         <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
     </svg>
     </div>
-
-
-
-
-
-
 </section> 
 
 
@@ -195,7 +189,7 @@ TODO:
 
 
 <!-- CONTACT START================ -->
-<section id="contact">
+<section class="contact">
 <p> Let's connect!</p>
 <form action="contact-form.php" method="post" class="contact-form">
     <div class="userinput-container"> 
@@ -218,12 +212,6 @@ TODO:
 </form>
 
 </section>
-
-
-
-
-
-
        
 </main> 
 

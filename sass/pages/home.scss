@@ -90,11 +90,22 @@ nav{
 
 
 // HERO START =============
-#hero { 
+@media  (min-width: $laptops) { 
+    .transform{ 
+        position: relative !important;
+        left: -150px !important; 
+      
+        span { 
+        font-size: 62px !important;
+        }
+    }
+ }
+
+.hero { 
     @include flex-column-center;
     background-color: $primary-one;
 
-    #logomenu-container { 
+    .logomenu-container { 
        @include flex-row-space-between; 
        color: $primary-white-type;
 
@@ -112,7 +123,7 @@ nav{
        
     }
 
-    #hero-name { 
+    .hero-name { 
         display: block;
     color: $primary-white-type;
      align-self: center;
@@ -123,7 +134,7 @@ nav{
         float: right;
        }
 
-       #transform { 
+       .transform { 
         @include text-shadow; 
         font-size: 8rem;
         position: absolute; 
@@ -160,7 +171,7 @@ nav{
 
     } 
 
-    #next-section-container{
+    .next-section-container{
         @include flex-colum-end; 
 
     h2 {
@@ -168,7 +179,7 @@ nav{
        padding-right: 10px;
        z-index: 1;
 
-       #down-arrow { 
+       .down-arrow { 
        @include down-arrow;
 
        }
@@ -179,13 +190,13 @@ nav{
 
 
 
-    #circle-container { 
+    .circle-container { 
         background-color: $primary-second; 
         height: 50px;
     @include flex-content-end;
     
 
-        #circle { 
+        .circle { 
         position: relative;
         top: -75px;
         left:10px; 
@@ -200,7 +211,7 @@ nav{
 
 // START OF GET TO KNOW ==============
 
-#about { 
+.about { 
     background-color: $primary-second;
 
     @include flex-column-center; 
@@ -210,7 +221,7 @@ nav{
         color: $primary-white-type;
     }
 
-    #know-me-container { 
+    .know-me-container { 
         margin: 4em auto;
         padding: 1em 2em 2em 2em;
         width: 75%;
@@ -225,7 +236,7 @@ nav{
 } 
 
 // Circle Container for GET to KNOW
-   #next-section-container{
+   .next-section-container{
     @include flex-colum-end; 
    h2 {
     @include section-name-design; 
@@ -240,13 +251,13 @@ nav{
     }
  }
 
- #circle-container { 
+ .circle-container { 
     background-color: $primary-one; 
     height: 50px;
   @include flex-content-end;
    
 
-    #circle { 
+    .circle { 
         @include circle;
     fill: $primary-second;
     }
@@ -255,15 +266,15 @@ nav{
 
 }; 
 
-
-
-
-
 // End of GE TO KNOW ////////////////
 
 
+
+
+
+
 // START OF WORKS ==================
-#works { 
+.works { 
     background-color: $primary-one;
     @include flex-column-center; 
 
@@ -304,7 +315,7 @@ nav{
        
     } 
     // Circle Container for WORKS
-    #next-section-container{
+    .next-section-container{
         @include flex-colum-end; 
 
        h2 {
@@ -312,7 +323,7 @@ nav{
         padding-right: 10px;
         z-index: 1;
     
-        #down-arrow { 
+        .down-arrow { 
          @include down-arrow;
     
         }
@@ -322,13 +333,13 @@ nav{
 
     }
     
-    #circle-container { 
+    .circle-container { 
         background-color: $primary-second; 
         height: 50px;
       @include flex-content-end;
        
     
-        #circle { 
+        .circle { 
             @include circle;
         fill: $primary-one;
         }
@@ -348,7 +359,7 @@ nav{
 
 //  START OF BLOG // 
 
-#blog { 
+.blog { 
     background-color: $primary-second;
 
 
@@ -381,8 +392,7 @@ nav{
 // END OF BLOG /////////////////
 
 // STart of Contact Form ===============
-
-#contact { 
+.contact { 
     background-color: $primary-one;
    display: flex;
    flex-direction: column;
@@ -450,25 +460,24 @@ nav{
 }
 
 
+// Animatations 
 
-
-
-#footer { 
-    @include flex-column-center;
-    background-color: $primary-one;
-
-    h1 { 
-        color: $primary-white-type;
+.animate-in {
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  @keyframes fade-in {
+    from {
+      transform: translateY(40px);
+      opacity: 0;
     }
-
-    h2 { 
-        color: $primary-white-type;
+    to {
+      transform: translateY(0px);
+      opacity: 1;
     }
+  }
 
-    h3 { 
-        font-size: 10px;   
-        color: $primary-second; 
-     }
 
-}
+
+
 
