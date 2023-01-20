@@ -1,15 +1,14 @@
-@font-face {
-  font-family: "rubik-80s";
-  src: local("rubik-80s"), url("//fonts/Rubik_80s_Fade/Rubik80sFade-Regular.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&family=Plus+Jakarta+Sans:wght@500&family=Press+Start+2P&family=Rubik+80s+Fade&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: "commissioner";
 }
 
 main {
   margin: 0;
   padding: 0;
+  background-color: #03666C;
 }
 
 nav {
@@ -106,7 +105,6 @@ nav ul li .home {
 }
 .hero .hero-name span {
   font-size: 48px;
-  font-family: "copperplate";
 }
 .hero .hero-name span:hover {
   color: #C98708;
@@ -149,27 +147,18 @@ nav ul li .home {
   width: 30px;
   height: 30px;
 }
-.hero .circle-container {
-  background-color: #263031;
-  height: 50px;
-  display: flex;
-  justify-content: flex-end;
-}
-.hero .circle-container .circle {
-  position: relative;
-  top: -75px;
-  left: 10px;
-  fill: #03666C;
-}
 
 .about {
   background-color: #263031;
+  border-top-left-radius: 40%;
+  border-top-color: #C98708;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
 .about h2 {
+  padding-top: 1em;
   color: white;
 }
 .about .know-me-container {
@@ -177,8 +166,18 @@ nav ul li .home {
   padding: 1em 2em 2em 2em;
   width: 75%;
   height: auto;
-  border-radius: 2%;
+  border-top-left-radius: 4em;
+  border-bottom-right-radius: 2em;
   background-color: #03666C;
+}
+.about .know-me-container p {
+  color: white;
+  line-height: 2em;
+  padding: 2em 4em 4em;
+}
+.about .know-me-container a {
+  padding: 0.5em;
+  color: #C98708;
 }
 
 .next-section-container {
@@ -189,8 +188,6 @@ nav ul li .home {
 .next-section-container h2 {
   color: #DEDEDE;
   opacity: 50%;
-  padding-right: 10px;
-  z-index: 1;
 }
 .next-section-container h2 #down-arrow {
   width: 30px;
@@ -198,20 +195,12 @@ nav ul li .home {
 }
 
 .circle-container {
-  background-color: #03666C;
-  height: 50px;
   display: flex;
   justify-content: flex-end;
 }
-.circle-container .circle {
-  position: relative;
-  top: -75px;
-  right: 10px;
-  fill: #263031;
-}
 
 .works {
-  background-color: #03666C;
+  background-color: #263031;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -289,15 +278,34 @@ nav ul li .home {
 .blog {
   background-color: #263031;
 }
+.blog .catchblog-container {
+  display: grid;
+  grid-template: "a a b b " "a c c c " "d d d c " "e e f f ";
+}
+.blog .catchblog-container a {
+  grid-area: a;
+}
+.blog .catchblog-container b {
+  grid-area: b;
+}
+.blog .catchblog-container c {
+  grid-area: c;
+}
+.blog .catchblog-container d {
+  grid-area: d;
+}
+.blog .catchblog-container e {
+  grid-area: e;
+}
+.blog .catchblog-container f {
+  grid-area: f;
+}
 .blog h1 {
-  width: 100px;
   color: white;
-  align-self: start;
-  padding-left: 20px;
   font-size: 36px;
 }
-.blog ul {
-  color: white;
+.blog .recent-post {
+  align-self: flex-end;
 }
 .blog button {
   align-self: center;
@@ -320,7 +328,7 @@ nav ul li .home {
 }
 
 .contact {
-  background-color: #03666C;
+  background-color: #263031;
   display: flex;
   flex-direction: column;
 }

@@ -10,12 +10,18 @@
 * { 
 box-sizing: border-box;
 margin: 0;
+font-family: 'commissioner';
 }
 main { 
     margin: 0;
     padding: 0;
+    background-color: $primary-one;
 
 }
+
+
+// ACENT LINE 
+
 
 
 // NAV BAR START=================
@@ -144,7 +150,6 @@ nav{
 
        span { 
         font-size: 48px;
-        font-family: 'copperplate'; 
  
     
         &:hover { 
@@ -190,34 +195,30 @@ nav{
 
 
 
-    .circle-container { 
-        background-color: $primary-second; 
-        height: 50px;
-    @include flex-content-end;
-    
-
-        .circle { 
-        position: relative;
-        top: -75px;
-        left:10px; 
-        fill: $primary-one;
-        }
-} 
-
-
     
 }
 // HERO END //////////////////
+
+
+
+
+
+
+
+
 
 // START OF GET TO KNOW ==============
 
 .about { 
     background-color: $primary-second;
+    border-top-left-radius: 40%; 
+    border-top-color: $main-accent; 
 
     @include flex-column-center; 
 
 
     h2 { 
+        padding-top: 1em;
         color: $primary-white-type;
     }
 
@@ -226,8 +227,21 @@ nav{
         padding: 1em 2em 2em 2em;
         width: 75%;
         height: auto;
-        border-radius: 2%;
+        border-top-left-radius: 4em;
+        border-bottom-right-radius: 2em;
         background-color: $primary-one;
+
+        p { 
+            color: $primary-white-type; 
+            line-height: 2em;
+            padding: 2em 4em 4em; 
+        }
+
+        a { 
+            
+            padding: .5em;
+            color: $main-accent; 
+        }
 
      }
 
@@ -240,27 +254,16 @@ nav{
     @include flex-colum-end; 
    h2 {
     @include section-name-design; 
-    padding-right: 10px;
-    z-index: 1;
-
     #down-arrow { 
      @include down-arrow;
-
     }
-
     }
  }
 
  .circle-container { 
-    background-color: $primary-one; 
-    height: 50px;
+    
   @include flex-content-end;
    
-
-    .circle { 
-        @include circle;
-    fill: $primary-second;
-    }
        
    
 
@@ -275,7 +278,7 @@ nav{
 
 // START OF WORKS ==================
 .works { 
-    background-color: $primary-one;
+    background-color: $primary-second;
     @include flex-column-center; 
 
     button { 
@@ -319,6 +322,8 @@ nav{
          
        
     } 
+
+
     // Circle Container for WORKS
     .next-section-container{
         @include flex-colum-end; 
@@ -366,19 +371,52 @@ nav{
 
 .blog { 
     background-color: $primary-second;
+ 
+.catchblog-container { 
+display: grid;
+grid-template: 
+"a a b b "
+"a c c c "
+"d d d c "
+"e e f f "
+;
 
+a { 
+    grid-area: a;
+}
+
+b { 
+    grid-area: b;
+}
+
+c { 
+    grid-area: c;
+}
+
+d { 
+    grid-area: d;
+}
+
+e { 
+    grid-area: e;
+}
+
+f  {
+    grid-area: f;
+}
+}
 
     h1 { 
-        width: 100px;
+
         color: $primary-white-type;
-        align-self: start;
-        padding-left: 20px;
+      
         font-size: 36px;
     }
 
-    ul { 
-        color: $primary-white-type;
-    }
+   
+    .recent-post {
+        align-self: flex-end;
+    } 
 
     button { 
         align-self: center;
@@ -398,7 +436,7 @@ nav{
 
 // STart of Contact Form ===============
 .contact { 
-    background-color: $primary-one;
+    background-color: $primary-second;
    display: flex;
    flex-direction: column;
    
