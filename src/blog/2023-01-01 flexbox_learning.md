@@ -2,7 +2,7 @@
 title: Flexbox Learning 
 author: Colten Siemer
 date: 
-tags: post
+tags: [post]
 image: /assests/images/blog/Fotor_AI (1).png
 imageAlt: Studying for "this"
 description: lorem lorme a sdfasdf asdf asdg asdgad asd gadsg a a dsgad gfadg asdg ads

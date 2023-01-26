@@ -1,8 +1,8 @@
 ---
 title: Importance of index
 description: What is an index file?
-date:
-tags: post, other
+date: 2023-01-15T00:00:00.000Z
+tags: [post, other] 
 image: /assests/images/blog/Fotor_AI (1).png
 imageAlt: Index file
 ---
