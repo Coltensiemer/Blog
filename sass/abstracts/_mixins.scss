@@ -77,3 +77,10 @@
     text-shadow: 40px 26px 0px rgba(201,135,8,0.49);
 } 
 
+//GLASSMORPHISM 
+@mixin glassmorph {  box-shadow: 10px -4px 66px 8px rgba(0,0,0,0.27); 
+    backdrop-filter: blur(6.7px);
+    -webkit-backdrop-filter: blur(6.7px);
+    border: 1px solid #C98708; 
+    border-radius: 25px; 
+} 

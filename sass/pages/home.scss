@@ -135,6 +135,7 @@ nav{
      align-self: center;
      font-size: 32px;
      padding-top: 3em; 
+     
     
        img { 
         float: right;
@@ -227,9 +228,11 @@ nav{
         padding: 1em 2em 2em 2em;
         width: 75%;
         height: auto;
-        border-top-left-radius: 4em;
+        box-shadow: $box-shadow-main;
+       @include glassmorph;
+        border-top-left-radius: 5em;
         border-bottom-right-radius: 2em;
-        background-color: $primary-one;
+       
 
         p { 
             color: $primary-white-type; 
@@ -361,7 +364,36 @@ nav{
 /// END of WORKS 
 
 
-
+// .catchblog-container {  display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+//     gap: 0px 0px;
+//     grid-auto-flow: row;
+//     grid-template-areas:
+//       "a h h"
+//       "b g g"
+//       "c g g"
+//       "d g g"
+//       "e g g"
+//       "f g g";
+//   }
+  
+//   .a { grid-area: a; }
+  
+//   .b { grid-area: b; }
+  
+//   .c { grid-area: c; }
+  
+//   .d { grid-area: d; }
+  
+//   .e { grid-area: e; }
+  
+//   .f { grid-area: f; }
+  
+//   .h { grid-area: h; }
+  
+//   .g { grid-area: g; }
+  
 
 
 
@@ -369,44 +401,123 @@ nav{
 
 //  START OF BLOG // 
 
+
+
 .blog { 
     background-color: $primary-second;
+
+
+    .catchblog-container {  
+        display: grid; 
+      
+          @media (min-width: $tablets) {
+            padding: 4em;
+            display: grid;
+            grid-template-columns: .5fr 1fr 1fr .5fr .5fr 4fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 20px 50px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              ". . . . . ."
+              ". A B . h h"
+              ". C C C C g"
+              ". . d d d g"
+              ". . e f . ."
+              ". . . . . .";
+                
+          }
+
+      }
+
+      .catchblog { 
+        border: 1px $main-accent solid;
+        padding: .5em;
+        width: 100px;
+        font-size: 48px;
+        box-shadow: $box-shadow-main;
+        background-color: aqua;
+        background: rgba(255, 255, 255, 0.17);
+        border-radius: 16px;
+        box-shadow: $box-shadow-main;
+        backdrop-filter: blur(6.7px);
+        -webkit-backdrop-filter: blur(6.7px);
+            border: 1px solid $main-accent(255, 255, 255, 0.85);
+
+        
+        
+    }
+
+
+    @media (min-width: $tablets) {
+      
+      .a { grid-area: A;
+    position: relative;
+top: 30px;}
+      
+      .b { grid-area: B; 
+    width: 75px;
+    position: relative;
+    top: 50px; 
+    left: -35px;}
+      
+      .c { grid-area: C; 
+        position: relative;
+        top: 20px;
+    width: 350px;}
+      
+      .d { grid-area: d; 
+        width: 350px;}
+      
+      .e { grid-area: e; 
+    position: relative;
+    top: -25px;}
+      
+      .f { grid-area: f;
+        position: relative;
+        left: -25px;
+        top: -5px; 
+    width: 140px}
+
+    .h { grid-area: h; // Paragraph /// 
+
+    }
+      
+    .g { grid-area: g;
+    align-self: center;
+    }
+} 
+
+.blogpara { 
+    color: $primary-white-type; 
+    align-items: center;
+    line-height: 1.5em;
+
+}
+
+    .recent-post { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2em;
+    }
     
+    .snippet_title { 
+       list-style: none;
+       color: $primary-white-type;
+      
 
-.catchblog-container { 
-display: grid;
-grid-template: 
-"a a b b "
-"a c c c "
-"d d d c "
-"e e f f "
-;
+       a { 
+        
+        color: $primary-white-type;
 
-a { 
-    grid-area: a;
-}
+       }
+    
+    }
 
-b { 
-    grid-area: b;
-}
 
-c { 
-    grid-area: c;
-}
 
-d { 
-    grid-area: d;
-}
 
-e { 
-    grid-area: e;
-}
 
-f  {
-    grid-area: f;
-}
-
-}
 
     h1 { 
 
@@ -421,12 +532,13 @@ f  {
     } 
 
     button { 
-        align-self: center;
+        align-self: flex-start;
         @include primary-button; 
         box-shadow: 0 0 40px 40px $primary-one inset, 0 0 0 0 $primary-one; 
 
         &:hover { 
             @include button-hover; 
+            cursor: pointer;
 
         }
     }
