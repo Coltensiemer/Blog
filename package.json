@@ -20,5 +20,8 @@
   "homepage": "https://github.com/Coltensiemer/Blog#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2"
+  },
+  "dependencies": {
+    "luxon": "^3.2.1"
   }
 }

@@ -1,7 +1,7 @@
 ---
 title: Flexbox Learning 
 author: Colten Siemer
-date: 
+date: 2023-03-06
 tags: [post]
 image: /assests/images/blog/Fotor_AI (1).png
 imageAlt: Studying for "this"
