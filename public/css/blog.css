@@ -23,7 +23,7 @@ section,
 }
 
 body {
-  background: #03666C;
+  background: #263031;
 }
 
 nav {
@@ -85,50 +85,73 @@ nav ul li .home {
 }
 
 .articles {
-  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
   list-style: none;
   color: white;
 }
 .articles .article_snippet {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "snippet_title snippet_date" "snippet_description snippet_description" "snippet_description snippet_description" "article-btn article-btn";
+  width: 250px;
+  height: 250px;
+  border: 2px red solid;
   margin: 50px auto;
-  padding: 0.5em;
   text-align: center;
-}
-.articles .article_snippet .snippet_image {
-  width: calc(100% - 0.5em);
-  max-height: 300px;
+  box-shadow: 10px -4px 66px 8px rgba(0, 0, 0, 0.27);
+  backdrop-filter: blur(6.7px);
+  -webkit-backdrop-filter: blur(6.7px);
+  border: 1px solid #C98708;
+  border-radius: 25px;
 }
 .articles .article_snippet .snippet_title {
+  grid-area: snippet_title;
+}
+.articles .article_snippet .snippet_description {
+  grid-area: snippet_description;
+}
+.articles .article_snippet .snippet_date {
+  grid-area: snippet_date;
+}
+.articles .article_snippet .article-btn {
+  grid-area: article-btn;
+}
+.articles .article_snippet .snippet_date {
+  font-size: 12px;
+  align-self: center;
+}
+.articles .article_snippet .snippet_title {
+  padding: 0.5em;
+  align-self: center;
   color: white;
   text-decoration: none;
   list-style: none;
+  font-size: 24px;
+}
+.articles .article_snippet .snippet_title a:visited {
+  color: gray;
+}
+.articles .article_snippet .snippet_title a:active {
+  color: gray;
 }
 .articles .article_snippet .snippet_author {
   font-size: 12px;
 }
 .articles .article_snippet .snippet_description {
   font-size: 12px;
-  margin: 10px;
+  line-height: 1.5em;
+  margin: auto;
 }
 .articles .article_snippet .article-btn {
-  width: 140px;
-  height: 50px;
-  padding: 0.5em;
-  border-radius: 20px;
-  background-color: transparent;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  text-transform: uppercase;
-  color: white;
-  box-shadow: 0 0 40px 40px #C98708 inset, 0 0 0 0 #C98708;
-  transition: all 150ms ease-in-out;
-  padding: 1.1em;
+  margin: 0 auto;
   font-size: 12px;
+  background-color: #C98708 !important;
   text-decoration: none;
-  width: 50px !important;
-  height: 25px !important;
-}
-.articles .article_snippet .article-btn:hover {
-  box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px white;
+  width: 100%;
+  border: 1px #C98708 solid;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }/*# sourceMappingURL=blog.css.map */
