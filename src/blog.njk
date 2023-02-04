@@ -7,9 +7,8 @@ layout: 'blog-temp.njk'
 
 <div class="section-container"> 
 <h1 class="section_title">Welcome to my Blog!<h1>
-<p class="section_para"> This blog is focus on my web development learning. Sometimes the best way to learn, is to explain what I jsut learned. 
-    so each article I take a subject I learned and try to break it down in my own words.  
-
+<p class="section_para"> This blog is dedicated to  my journey in web development. I believe that explaining what I have learned is the best way to reinforce my own understanding and deepen my knowledge. Take a look to reinforce yours!
+</p>
 <ul role="list" class="articles">
 {%- for post in collections.post | reverse  -%}
 <li> 
@@ -18,7 +17,10 @@ layout: 'blog-temp.njk'
 {# <h4 class="snippet_author"> {{ post.data.author}} </h4>   #}
 <h4 class="snippet_date">{{post.data.date | postDate}}</h4> 
 <p class="snippet_description"> {{post.data.description}}</p> 
-<button class="article-btn"><a href="{{ post.url }} "> Continue to Read </a> 
+<a href="{{ post.url }} "> 
+    <button class="article-btn">Click to Read </button> 
+
+    </a> 
 </article>
 </li>
 {%- endfor -%}

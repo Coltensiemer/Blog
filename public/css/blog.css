@@ -45,7 +45,7 @@ nav #container-exit {
   font-size: 32px;
 }
 nav ul {
-  margin: 50px auto;
+  padding: 0;
   display: flex;
   flex-direction: column;
   gap: 2em;
@@ -72,13 +72,15 @@ nav ul li .home {
 }
 
 .section_title {
-  padding: 10px;
+  padding-top: 1em;
+  padding: 2em;
   text-align: center;
   color: white;
 }
 
 .section_para {
-  width: calc(100% - 1em);
+  line-height: 1.5em;
+  padding: 0 2em 2em;
   text-align: center;
   color: white;
   font-size: 16px;
@@ -88,6 +90,8 @@ nav ul li .home {
   display: flex;
   flex-direction: column;
   list-style: none;
+  margin: 0;
+  padding: 0;
   color: white;
 }
 .articles .article_snippet {
@@ -116,14 +120,15 @@ nav ul li .home {
 .articles .article_snippet .snippet_date {
   grid-area: snippet_date;
 }
-.articles .article_snippet .article-btn {
+.articles .article_snippet a {
   grid-area: article-btn;
 }
-.articles .article_snippet .snippet_date {
+.articles .snippet_date {
   font-size: 12px;
   align-self: center;
 }
-.articles .article_snippet .snippet_title {
+.articles .snippet_title {
+  background-color: transparent !important;
   padding: 0.5em;
   align-self: center;
   color: white;
@@ -131,27 +136,41 @@ nav ul li .home {
   list-style: none;
   font-size: 24px;
 }
-.articles .article_snippet .snippet_title a:visited {
-  color: gray;
-}
-.articles .article_snippet .snippet_title a:active {
-  color: gray;
-}
-.articles .article_snippet .snippet_author {
+
+.snippet_author {
   font-size: 12px;
 }
-.articles .article_snippet .snippet_description {
+
+.snippet_description {
   font-size: 12px;
   line-height: 1.5em;
   margin: auto;
 }
-.articles .article_snippet .article-btn {
-  margin: 0 auto;
-  font-size: 12px;
+
+a {
+  position: relative;
+  margin: auto;
   background-color: #C98708 !important;
   text-decoration: none;
   width: 100%;
-  border: 1px #C98708 solid;
+  height: 100%;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+}
+a:hover {
+  box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px white;
+}
+a .article-btn {
+  background-color: transparent;
+  margin: 0 auto;
+  font-size: 12px;
+  text-decoration: none;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .article-snippet {
+    display: flex;
+    background-color: red;
+  }
 }/*# sourceMappingURL=blog.css.map */
