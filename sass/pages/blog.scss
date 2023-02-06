@@ -108,13 +108,15 @@ nav {
 
 /// ARTICLE POST
 
-.articles {
+.articles { // The container of all articles 
     display: flex;
     flex-direction: column;
     list-style: none;
     margin:0; 
     padding: 0;
     color: $primary-white-type; 
+
+
 
 
 .article_snippet {

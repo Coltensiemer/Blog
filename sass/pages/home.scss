@@ -135,6 +135,7 @@ nav{
      align-self: center;
      font-size: 32px;
      padding-top: 3em; 
+    
      
     
        img { 
@@ -212,7 +213,6 @@ nav{
 
 .about { 
     background-color: $primary-second;
-    border-top-left-radius: 40%; 
     border-top-color: $main-accent; 
 
     @include flex-column-center; 
@@ -224,14 +224,12 @@ nav{
     }
 
     .know-me-container { 
-        margin: 4em auto;
-        padding: 1em 2em 2em 2em;
-        width: 75%;
+        margin: 4em 1em auto;
+       
         height: auto;
         box-shadow: $box-shadow-main;
        @include glassmorph;
-        border-top-left-radius: 5em;
-        border-bottom-right-radius: 2em;
+ 
        
 
         p { 
@@ -296,14 +294,14 @@ nav{
         margin: 20px auto;
     }
     p{ 
-        margin: 0 auto;
+        margin: 1em auto;
         width: 80%;
         color: $primary-white-type;
     }
 
 
     .works-container { 
-      max-width: 25%;
+    
         background-color: $primary-second;
         border: $main-accent 1px solid;
         margin: 1em;
@@ -322,9 +320,20 @@ nav{
             padding: .25em;
             
          }
-         
-       
+
+    
     } 
+
+    @media (min-width: $tablets) { //MEDIA QUERY FOR WORKS CONTAINERS 
+        .works-container{ 
+            width: 25% !important;
+
+           a{ 
+                 background-size: contain
+            }
+        }
+     }
+   
 
 
     // Circle Container for WORKS
@@ -364,44 +373,35 @@ nav{
 /// END of WORKS 
 
 
-// .catchblog-container {  display: grid;
-//     grid-template-columns: 1fr 1fr 1fr;
-//     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-//     gap: 0px 0px;
-//     grid-auto-flow: row;
-//     grid-template-areas:
-//       "a h h"
-//       "b g g"
-//       "c g g"
-//       "d g g"
-//       "e g g"
-//       "f g g";
-//   }
-  
-//   .a { grid-area: a; }
-  
-//   .b { grid-area: b; }
-  
-//   .c { grid-area: c; }
-  
-//   .d { grid-area: d; }
-  
-//   .e { grid-area: e; }
-  
-//   .f { grid-area: f; }
-  
-//   .h { grid-area: h; }
-  
-//   .g { grid-area: g; }
-  
-
-
-
-
-
 //  START OF BLOG // 
 
+.catchblog-container { 
 
+   
+.catchblog { 
+    display: none;
+}
+
+.blogpara { 
+    padding: 4em !important;
+    line-height: 1.5em;
+   
+}
+
+.recent-post { 
+    margin: auto;
+    
+}
+
+.snippet_title { 
+    position: relative;
+    left: -2em;
+    list-style-type: none;
+}
+
+
+}
+  
 
 .blog { 
     background-color: $primary-second;
@@ -411,8 +411,18 @@ nav{
         display: grid; 
       
           @media (min-width: $tablets) {
-            padding: 4em;
-            display: grid;
+
+            .blogpara { 
+                padding: 0 !important;
+                padding-left: -5em !important;
+            }
+
+            .catchblog { 
+                display: grid !important;
+            }
+            
+           
+            display: grid !important;
             grid-template-columns: .5fr 1fr 1fr .5fr .5fr 4fr;
             grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
             gap: 20px 50px;
@@ -529,12 +539,14 @@ top: 30px;}
    
     .recent-post {
         align-self: flex-end;
+        padding-bottom: 2em;
     } 
 
     button { 
         align-self: flex-start;
         @include primary-button; 
         box-shadow: 0 0 40px 40px $primary-one inset, 0 0 0 0 $primary-one; 
+        
 
         &:hover { 
             @include button-hover; 
@@ -553,6 +565,9 @@ top: 30px;}
     background-color: $primary-second;
    display: flex;
    flex-direction: column;
+   padding-top: 2em;
+ 
+   border-top: 2px $main-accent solid;
    
    p { 
     text-align: center;
@@ -560,7 +575,7 @@ top: 30px;}
     color: $primary-white-type; 
    }
 
-    form { 
+    form { // Form Container 
         @include flex-column-center; 
         margin: 10%;
         gap: 1em; 
@@ -601,7 +616,7 @@ top: 30px;}
             background: transparent;
             
             
-            
+            // What happens when you focus 
           &:focus ~ label, 
           &:valid ~ label
           { 
@@ -614,6 +629,33 @@ top: 30px;}
 
 
 } 
+
+}
+@media (min-width: $tablets) { 
+    .contact-form { 
+        width: 100% !important;
+        
+    }
+
+    label,input { 
+        font-size: 24px;
+
+        &:focus ~ label, 
+        &:valid ~ label
+        { 
+          color: $main-accent;
+          top: -5px; 
+          left: 0px; 
+          font-size: 16px;
+        }
+    }
+
+
+    textarea { 
+        height: 200px;
+    }
+
+   
 }
 
 

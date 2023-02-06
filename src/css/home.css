@@ -150,7 +150,6 @@ nav ul li .home {
 
 .about {
   background-color: #263031;
-  border-top-left-radius: 40%;
   border-top-color: #C98708;
   display: flex;
   flex-direction: column;
@@ -162,9 +161,7 @@ nav ul li .home {
   color: white;
 }
 .about .know-me-container {
-  margin: 4em auto;
-  padding: 1em 2em 2em 2em;
-  width: 75%;
+  margin: 4em 1em auto;
   height: auto;
   box-shadow: 10px -4px 66px 8px rgba(0, 0, 0, 0.27);
   box-shadow: 10px -4px 66px 8px rgba(0, 0, 0, 0.27);
@@ -172,8 +169,6 @@ nav ul li .home {
   -webkit-backdrop-filter: blur(6.7px);
   border: 1px solid #C98708;
   border-radius: 25px;
-  border-top-left-radius: 5em;
-  border-bottom-right-radius: 2em;
 }
 .about .know-me-container p {
   color: white;
@@ -233,12 +228,11 @@ nav ul li .home {
   margin: 20px auto;
 }
 .works p {
-  margin: 0 auto;
+  margin: 1em auto;
   width: 80%;
   color: white;
 }
 .works .works-container {
-  max-width: 25%;
   background-color: #263031;
   border: #C98708 1px solid;
   margin: 1em;
@@ -251,6 +245,14 @@ nav ul li .home {
 }
 .works .works-container .title {
   padding: 0.25em;
+}
+@media (min-width: 768px) {
+  .works .works-container {
+    width: 25% !important;
+  }
+  .works .works-container a {
+    background-size: contain;
+  }
 }
 .works .next-section-container {
   display: flex;
@@ -280,6 +282,22 @@ nav ul li .home {
   fill: #03666C;
 }
 
+.catchblog-container .catchblog {
+  display: none;
+}
+.catchblog-container .blogpara {
+  padding: 4em !important;
+  line-height: 1.5em;
+}
+.catchblog-container .recent-post {
+  margin: auto;
+}
+.catchblog-container .snippet_title {
+  position: relative;
+  left: -2em;
+  list-style-type: none;
+}
+
 .blog {
   background-color: #263031;
 }
@@ -288,13 +306,19 @@ nav ul li .home {
 }
 @media (min-width: 768px) {
   .blog .catchblog-container {
-    padding: 4em;
-    display: grid;
+    display: grid !important;
     grid-template-columns: 0.5fr 1fr 1fr 0.5fr 0.5fr 4fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 20px 50px;
     grid-auto-flow: row;
     grid-template-areas: ". . . . . ." ". A B . h h" ". C C C C g" ". . d d d g" ". . e f . ." ". . . . . .";
+  }
+  .blog .catchblog-container .blogpara {
+    padding: 0 !important;
+    padding-left: -5em !important;
+  }
+  .blog .catchblog-container .catchblog {
+    display: grid !important;
   }
 }
 .blog .catchblog {
@@ -378,6 +402,7 @@ nav ul li .home {
 }
 .blog .recent-post {
   align-self: flex-end;
+  padding-bottom: 2em;
 }
 .blog button {
   align-self: flex-start;
@@ -404,6 +429,8 @@ nav ul li .home {
   background-color: #263031;
   display: flex;
   flex-direction: column;
+  padding-top: 2em;
+  border-top: 2px #C98708 solid;
 }
 .contact p {
   text-align: center;
@@ -454,6 +481,23 @@ nav ul li .home {
   font-size: 12px;
 }
 
+@media (min-width: 768px) {
+  .contact-form {
+    width: 100% !important;
+  }
+  label, input {
+    font-size: 24px;
+  }
+  label:focus ~ label, label:valid ~ label, input:focus ~ label, input:valid ~ label {
+    color: #C98708;
+    top: -5px;
+    left: 0px;
+    font-size: 16px;
+  }
+  textarea {
+    height: 200px;
+  }
+}
 .animate-in {
   -webkit-animation: fade-in 1s ease-in-out;
           animation: fade-in 1s ease-in-out;
